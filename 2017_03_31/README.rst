@@ -49,7 +49,7 @@ C/C++/Fortran Compile Conventions
 
 Basic Makefile
 --------------
-There is a basic ``Makefile`` already in the repo, you can use that for simple single directory jobs that will only run on linux. This Makefile should be sufficient for all (small) personal code-bases.
+There is a basic `Makefile <Makefile_BASIC>`_ already in the repo, you can use that for simple single directory jobs that will only run on linux. This Makefile should be sufficient for all (small) personal code-bases.
 
 
 Important Makefile tricks and Compile Flags
