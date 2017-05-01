@@ -33,6 +33,8 @@ Dictionary
 
   my_dict['key'] = val
 
+  for key in my_dict.keys():
+      print (key, my_dict[key])
 
 ============================================
 Read and write file using 'with'
@@ -75,6 +77,7 @@ Use Pandas' read_csv to read csv file to data frame
 
   # For numerical columns, min, max, mean, ...
   df['timing'].min()
+  df['ratio'].unique()
 
   # Apply constraints to print only rows of interest:
   df.loc[(df['ratio'] == 5) & (df['flux'] == 2000)]
