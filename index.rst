@@ -6,6 +6,8 @@ Code Review: Covered Topics
 
 - `Python Basics (Dany Vohl, @macrocosme) <code-review/2017_04_28/README.rst>`_
 
+- `Intro to mpi4py (Manodeep Sinha, @manodeep) <code-review/2017_05_26/README.rst>`_
+
 
   
 ############
