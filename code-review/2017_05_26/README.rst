@@ -11,8 +11,9 @@ Load the ``mpi4py`` package like so:
 -  module load mpi4py
 -  module list
 
+::
 
-    Currently Loaded Modulefiles:
+     Currently Loaded Modulefiles:
      1) openmpi/x86_64/gnu/1.6.1-psm             3) blas/x86_64/gnu/3.2.1-4
      5) scipy-numpy-dependencies/x86_64/gnu/1.0  7) mpi4py/x86_64/gnu/1.3
      2) atlas/x86_64/gnu/3.8.4-2                 4) lapack/x86_64/gnu/3.2.1-4
@@ -42,7 +43,9 @@ MPI "Hello World" with mpi4py
 Running the previous script
 ===========================
 
-**Assumes you have loaded the ``mpi4py`` package***
+Assumes you have loaded the ``mpi4py`` package
+
+::
 
     mpirun -np 4 python hello.py
 
