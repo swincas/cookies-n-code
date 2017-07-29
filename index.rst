@@ -11,6 +11,8 @@ Code Review: Covered Topics
 - `Jupyter Notebook and emcee (Caitlin Adams, @caitlinadams) <tutorials/jupyter_notebook_emcee/emcee_notebook.ipynb>`_
 
 - `Python Virtual Environments Cheat-Sheet (Collin Jacobs, @coljac) <code-review/2017_07_07/venvs.md>`_
+
+- `Speeding up your Python code -- writing a C extension for python (Manodeep Sinha, @manodeep) <code-review/2017_07_21/README.rst>`_
   
 ############
 Tutorials
