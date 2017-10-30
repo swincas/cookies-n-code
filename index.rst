@@ -13,6 +13,12 @@ Code Review: Covered Topics
 - `Python Virtual Environments Cheat-Sheet (Collin Jacobs, @coljac) <code-review/2017_07_07/venvs.md>`_
 
 - `Speeding up your Python code -- writing a C extension for python (Manodeep Sinha, @manodeep) <code-review/2017_07_21/README.rst>`_
+
+- `Speeding up your Python code -- writing a Cython extension (Wael Farah, @wfarah) <https://github.com/swincas/fast-histogram/tree/master/cython>`_
+
+- `Interacting with points in a python plot (Sabine Bellstedt, @SabineBellstedt) <code-review/2017_09_01/README.rst>`_
+
+
   
 ############
 Tutorials
