@@ -18,12 +18,38 @@ Code Review: Covered Topics
 
 - `Interacting with points in a python plot (Sabine Bellstedt, @SabineBellstedt) <code-review/2017_09_01/README.rst>`_
 
+- `Creating a GPU version of an existing CPU code (Greg Poole, @gpoole) <code-review/2017_10_13/README.rst>`_
 
-  
+- `Understanding how Executables and Packages are Found (Manodeep Sinha, @manodeep) <code-review/2017_10_27/README.rst>`_
+
 ############
 Tutorials
 ############
 
+***************************************************
+Pandas - A Python Package for Easier Data Analysis
+***************************************************
+
+- `Intro to Pandas for (Leonie Chevalier, @leoniechevalier) <tutorials/pandas_intro/Pandas\ intro.ipynb>`_
+
+*****************************************************************************
+git - A Version Control Software to Easily Track Changes to Code and Papers
+*****************************************************************************
+
+- `Intro to git <tutorials/intro_to_git/README.rst>`_
+
+*****************************************************************************
+Intel VTune Profiler - A GUI showing how long each line of code takes to run
+*****************************************************************************
+
+- `Intel Vtune Visual Profiler (Jacob Seiler, @jacobseiler) <tutorials/vtune_profiling/README.rst>`_
+
+***************************************************
+How to run `emcee` - A flexible MCMC python code 
+***************************************************
+
+- `Jupyter Notebook with emcee (Caitlin Adams, @caitlinadams) <tutorials/jupyter_notebook_emcee/emcee_notebook.ipynb>`_
+  
 ********************************************
 S2PLOT -- 3D interactive Visualization tool
 ********************************************
