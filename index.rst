@@ -22,6 +22,8 @@ Code Review: Covered Topics
 
 - `Understanding how Executables and Packages are Found (Manodeep Sinha, @manodeep) <code-review/2017_10_27/README.rst>`_
 
+- `Making interactive plots with Bokeh + Custom Colormaps(Robert Dzudzar, @rdzudzar) <code-review/2017_11_24/colourmaps_and_interactive_plots.ipynb>`_
+
 ############
 Tutorials
 ############
