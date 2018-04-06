@@ -24,6 +24,8 @@ Code Review: Covered Topics
 
 - `Making interactive plots with Bokeh + Custom Colormaps(Robert Dzudzar, @rdzudzar) <code-review/2017_11_24/colourmaps_and_interactive_plots.ipynb>`_
 
+- `Web scraping and wordclouds with python (Manodeep Sinha, @manodeep) <code-review/2018_03_16/README.rst>`_
+
 ############
 Tutorials
 ############
