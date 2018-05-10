@@ -67,3 +67,12 @@ S2PLOT -- 3D interactive Visualization tool
 *********************************************************************************************
 
 - `Jupyter Notebook with with line_profiler (Jacob Seiler, @jacobseiler) <code-review/2017_12_07/line_profiler.py.ipynb>`_ 
+
+****************************************************
+Talks at the Python in Astronomy Conference series
+****************************************************
+
+All the talks are stored and indexed on `Zenodo <https://zenodo.org/communities/pyastro/?page=1&size=20)>`_
+
+
+
