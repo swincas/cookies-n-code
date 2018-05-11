@@ -74,6 +74,10 @@ Intro to SQL Databases
 
 - `Intro to SQL (Sarah Hegarty, @) <tutorials/databases/README.rst>`_ 
 
+#######################
+External Web Resources
+#######################
+
 ****************************************************
 Talks at the Python in Astronomy Conference series
 ****************************************************
