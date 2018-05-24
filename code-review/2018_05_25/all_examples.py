@@ -14,6 +14,26 @@ rank = comm.Get_rank() # What number process is this one?
 size = comm.Get_size() # How many processes in total are there?
 
 def check_Nproc(N):
+    """
+    Ensures that an array with `N` elements can be equally divided among the
+    processes. 
+
+    If not, abort the program.
+
+    Parameters
+    ----------
+
+    N: Integer. Required.
+        Number of elements in array.
+
+    Returns
+    ----------
+
+    None.  
+
+    comm.Abort() is called if the elements cannot be equally divided among
+    processes.
+    """
 
     if N % size != 0:
         print("Choose a number of processes that equally divides the number of "
@@ -23,11 +43,39 @@ def check_Nproc(N):
 
 
 def hello_world():
+    """
+    Prints Hello World on each rank.
+
+    Parameters
+    ----------
+
+    None.
+
+    Returns
+    ----------
+
+    None.  
+    """
 
     print("I am Rank {0} of {1}: Hello World!".format(rank, size))
 
 
 def send_recv():
+    """
+    Manually sends data from rank 0 process to other processes.
+
+    If program is executed with only 1 process, raises a RuntimeError.
+
+    Parameters
+    ----------
+
+    None.
+
+    Returns
+    ----------
+
+    None.  
+    """
 
     if size == 1:
         print("This function sends data to other ranks.  It can't on with one "
@@ -44,8 +92,27 @@ def send_recv():
 
 
 def send_recv_mean(N=1e6):
+    """
+    Each process takes an equal slice of numbers from 0 to N and calculates the
+    local mean.  These are then passed back to rank 0 to determine the global
+    mean.
 
-    check_Nproc(N)
+    If N numbers does not divide equally among the specified number of
+    processes, a RuntimeError is raised. 
+
+    Parameters
+    ----------
+
+    N: Integer. Default: 1e6.
+        Calculate the mean of integers from 0 to N.
+
+    Returns
+    ----------
+
+    None.  
+    """
+
+    check_Nproc(N) # Ensure that the array can be spread across processes.
 
     # First determine the range of numbers this process will handle.
     lower_range = int(N/size * rank)
@@ -71,6 +138,24 @@ def send_recv_mean(N=1e6):
 
 
 def reduce_example(N=1e6):
+    """
+    Each process takes an equal slice of numbers from 0 to N and the global
+    mean is reduced onto rank 0. 
+
+    If N numbers does not divide equally among the specified number of
+    processes, a RuntimeError is raised. 
+
+    Parameters
+    ----------
+
+    N: Integer. Default: 1e6.
+        Calculate the mean of integers from 0 to N.
+
+    Returns
+    ----------
+
+    None.  
+    """
 
     check_Nproc(N)
 
@@ -90,6 +175,24 @@ def reduce_example(N=1e6):
 
 
 def reduce_array_example(N=100, num_bins=10):
+    """
+    Calculates the mean of numbers across bins.  Used to showcase that mpi4py
+    can communicate arrays across processes.
+
+    Parameters
+    ----------
+
+    N: Integer. Default: 100.
+        Largest data point to be summed.
+
+    num_bins: Integer. Default: 10.
+        Number of bins that we are summing within.
+
+    Returns
+    ----------
+
+    None.  
+    """
 
     data = np.array(random.sample(range(0, N), num_bins)) 
 
@@ -104,10 +207,37 @@ def reduce_array_example(N=100, num_bins=10):
 
 
 def my_example(datadir="./data", firstfile=0, lastfile=11):
+    """
+    Calculates the mean for numbers across different data files.  Used to
+    showcase the strength of mpi4py being able to open different files and
+    communicating the results back to root.
+
+    If the data files do not exist, creates files containing random numbers.
+
+    Parameters
+    ----------
+
+    datadir: String. Default: './data'.
+        The directory the data files are located in.
+
+    firstfile, lastfile: Integers.  Default: 0, 11.
+        The range of file numbers that are being read.
+
+    Returns
+    ----------
+
+    None.  
+    """
+
+    print("Running my example in parallel.")
+
+    # Check to see if the data directory exists.
+    if not os.path.exists(datadir) and rank == 0:                
+        os.makedirs(datadir)
 
     # If there aren't any data files, create some data.
-    fname = "{0}/data_{1}".format(datadir, firstfile)
-    if rank == 0 and not os.path.isfile(fname):
+    fname = "{0}/data_{1}".format(datadir, firstfile + rank)
+    if not os.path.isfile(fname):
         print("Creating data files to read from.")
         create_data(datadir=datadir, firstfile=firstfile, lastfile=lastfile)
         print("Done!")
@@ -141,14 +271,89 @@ def my_example(datadir="./data", firstfile=0, lastfile=11):
                                                 global_sum / global_N))
 
 
+def my_example_serial(datadir="./data", firstfile=0, lastfile=11):
+    """
+    Calculates the mean for numbers across different data files.  Is only run
+    on one process to validate the results of `my_example()`. 
+
+    If the data files do not exist, creates files containing random numbers.
+
+    Parameters
+    ----------
+
+    datadir: String. Default: './data'.
+        The directory the data files are located in.
+
+    firstfile, lastfile: Integers.  Default: 0, 11.
+        The range of file numbers that are being read.
+
+    Returns
+    ----------
+
+    None.  
+    """
+
+    print("Running my example in serial.")
+
+    # Check to see if the data directory exists.
+    if not os.path.exists(datadir) and rank == 0:                
+        os.makedirs(datadir)
+
+    # If there aren't any data files, create some data.
+    fname = "{0}/data_{1}".format(datadir, firstfile)
+    if not os.path.isfile(fname):
+        print("Creating data files to read from.")
+        create_data(datadir=datadir, firstfile=firstfile, lastfile=lastfile)
+        print("Done!")
+    
+    sum_local = 0  # Initialize.
+    N_local = 0
+
+    # Now each Task will get its own set of files to read in.  
+    # This loop ensures each file is only read one.
+    for filenr in range(firstfile, lastfile + 1):
+
+        fname = "{0}/data_{1}".format(datadir, filenr)
+        data_thisfile = np.loadtxt(fname)
+
+        # Sum up the data from this file.
+        sum_local += sum(data_thisfile)
+        N_local += len(data_thisfile)
+
+    print("There were {0} values processed with a sum of {1} and mean of {2}" \
+          .format(N_local, sum_local, sum_local / N_local))
+
+
 def create_data(datadir="./data", firstfile=0, lastfile=11, N_lower=5e5,
                 N_upper=6e5):
+    """
+    Creates .txt files with a random number of random numbers.  The number of
+    files created is lastfile - firstfile + 1.  Used for `my_example()`. 
+
+    Parameters
+    ----------
+
+    datadir: String. Default: './data'.
+        The directory the data files are located in.
+
+    firstfile, lastfile: Integers.  Default: 0, 11.
+        The range of file numbers that are being read.
+    
+    N_lower, N_upper: Integers.  Default: 5e5, 6e5.
+        Generates N random numbers where N_lower < N < N_upper + 1.
+        Each random number generated, x_i, is -int(N_lower*3) < x_i < int(N_upper * 3).
+
+    Returns
+    ----------
+
+    None.  Data files are created in the `datadir` directory.  
+    """
 
     for filenr in range(firstfile + rank, lastfile + 1, size):
         N = random.randint(N_lower, N_upper + 1)
         data = np.array(random.sample(range(-int(N_lower*3), int(N_upper*3)), N))
 
-        fname = "{0}/data_{1}".format(datadir, filenr)
+        fname = "{0}/data_{1}.txt".format(datadir, filenr)
         np.savetxt(fname, data) 
 
 if __name__ == "__main__":
@@ -158,4 +363,5 @@ if __name__ == "__main__":
     #send_recv_mean()
     #reduce_example()
     #reduce_array_example()
-    my_example()
+    #my_example()
+    my_example_serial()
