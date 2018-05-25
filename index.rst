@@ -28,6 +28,8 @@ Code Review: Covered Topics
 
 - `Web scraping and wordclouds with python (Manodeep Sinha, @manodeep) <code-review/2018_03_16/README.rst>`_
 
+- `Another intro to mpi4py (Jacob Seiler, @jacobseiler) <code-review/2018_05_25/README.rst>`_
+
 ############
 Tutorials
 ############
