@@ -7,7 +7,7 @@ covers the basics of what exactly MPI is, when you should use it, and provides
 some examples of basic use-cases.
 
 As always, the documentation contains a wealth of information and has a
-comprehensive `tutorial <http://mpi4py.scipy.org/docs/usrman/tutorial.html>`.
+comprehensive `tutorial <http://mpi4py.scipy.org/docs/usrman/tutorial.html>`_.
 
 Author
 --------------------------------------------------------
