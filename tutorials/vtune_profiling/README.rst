@@ -8,7 +8,7 @@ This is a set of basic instructions I (Jacob) used to profile my code on g2.
 
 2. Be a considerate user and move onto an interactive node; ``ssh -Y sstar001``.
 
-3a. Load the Intel module; ``module load intel/13.3.11``.
+3a. Load the Intel module; ``module load intel/13.3.1``.
 
 3b. Remember to load any modules that your code needs to run on g2.
 
@@ -18,7 +18,7 @@ This is a set of basic instructions I (Jacob) used to profile my code on g2.
 
 6. Set up a new project.  You will need to specify the location of your code you want to profile (*Application*) and any input parameters that it takes (*Application parameters*). It also may be a good idea to change the *Automatically stop collection after (sec)* parameter to a few minutes; if your full program iterates a number of times but does the same calculations each iteration then it may not be necessary to run your code for the entire time.  Simply run it for a few minutes and you should get a good idea of the bottlenecks.
 	
-7. Start a New Analysis.  Specify *CPU Sample Time* as 1ms and hit Start.
+7. Start a New Analysis by clicking *New Analysis*.  Specify *CPU Sample Time* as 1ms and hit Start.
  
 8. Wait patiently.
 
