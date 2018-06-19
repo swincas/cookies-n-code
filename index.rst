@@ -26,7 +26,10 @@ Code Review: Covered Topics
 
 - `Getting started with version control (git and mercurial) (Manodeep Sinha, @manodeep) <code-review/2018_03_02/README.rst>`_
 
-- `Web scraping and wordclouds with python (Manodeep Sinha, @manodeep) <code-review/2018_03_16/README.rst>`_
+- `Web scraping and wordclouds with python (Manodeep Sinha, @manodeep)
+  <code-review/2018_03_16/README.rst>`_
+
+- `Shell environments and Scripting (Leonie Chevalier, @leoniechevalier and Manodeep Sinha, @manodeep) <code-review/2018_04_06/README.rst>`_
 
 - `Intro to setting up SSH Keys and SSH config (Adam Batten, @abatten) <code-review/2018_05_11/README.rst>`_
 
