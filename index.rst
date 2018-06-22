@@ -45,7 +45,7 @@ Tutorials
 Pandas - A Python Package for Easier Data Analysis
 ***************************************************
 
-- `Intro to Pandas for (Leonie Chevalier, @leoniechevalier) <tutorials/pandas_intro/Pandas\ intro.ipynb>`_
+- `Intro to Pandas for (Leonie Chevalier, @leoniechevalier) <tutorials/pandas_intro/README.rst>`_
 
 *****************************************************************************
 git - A Version Control Software to Easily Track Changes to Code and Papers
