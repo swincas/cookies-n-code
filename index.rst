@@ -26,7 +26,16 @@ Code Review: Covered Topics
 
 - `Getting started with version control (git and mercurial) (Manodeep Sinha, @manodeep) <code-review/2018_03_02/README.rst>`_
 
-- `Web scraping and wordclouds with python (Manodeep Sinha, @manodeep) <code-review/2018_03_16/README.rst>`_
+- `Web scraping and wordclouds with python (Manodeep Sinha, @manodeep)
+  <code-review/2018_03_16/README.rst>`_
+
+- `Shell environments and Scripting (Leonie Chevalier, @leoniechevalier and Manodeep Sinha, @manodeep) <code-review/2018_04_06/README.rst>`_
+
+- `Intro to setting up SSH Keys and SSH config (Adam Batten, @abatten) <code-review/2018_05_11/README.rst>`_
+
+- `Another intro to mpi4py (Jacob Seiler, @jacobseiler)  <code-review/2018_05_25/README.rst>`_
+
+- `Getting Started on OzSTAR (Manodeep Sinha, @manodeep) <code-review/2018_06_08/README.rst>`_
 
 ############
 Tutorials
@@ -36,7 +45,7 @@ Tutorials
 Pandas - A Python Package for Easier Data Analysis
 ***************************************************
 
-- `Intro to Pandas for (Leonie Chevalier, @leoniechevalier) <tutorials/pandas_intro/Pandas\ intro.ipynb>`_
+- `Intro to Pandas for (Leonie Chevalier, @leoniechevalier) <tutorials/pandas_intro/README.rst>`_
 
 *****************************************************************************
 git - A Version Control Software to Easily Track Changes to Code and Papers
