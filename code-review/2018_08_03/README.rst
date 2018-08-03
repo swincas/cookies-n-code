@@ -60,13 +60,13 @@ Start a jupyter-notebook server but without a browser by running the following c
 
 The "--ip=$HOST" flag specifies that the notebook server will listen on johnXX IP address rather than localhost.
 
-When the server starts, it should print something like:
+If the server successfully launches, it should print something like:
 
 *The Jupyter Notebook is running at:*
 
-*http://localhost:8888/?token=hf7hjbakd93bd92n497hdfn203nf*
+*http://john32:8888/?token=hf7hjbakd93bd92n497hdfn203nf*
 
-Note the port number that the server binds to (8888 in this case), let's call it the remote_port, we're going to use it in the next step.
+Note the port number that the server binds to (8888 in this case), let's call it the *remote_port*, as we're going to use it in the next step.
 
 Step 4:
 """""""
@@ -79,4 +79,4 @@ In a new terminal, ssh into ozstar, but this time using the port forwarding flag
 
 replacing *remote_port* by what was given in step 3 (8888 in this example), and *host* by what was given in step 2. For simplicity, let's make *local_port=remote_port*.
 
-Finally, launch your favorite browser, and copy/paste the address that the jupyter-notebook is running at, as given in step 3. In case *local_port=/=remote_port*, replace the *remote_port* number in the address by the *local_port* that you've selected.
+Finally, launch your favorite browser, copy/paste the address that the jupyter-notebook is running at, as given in step 3, and replace the host name in the address ("john32" in this case) by "localhost". In case *local_port!=remote_port*, replace the *remote_port* number in the address by the *local_port* that you've selected.
