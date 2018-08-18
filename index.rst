@@ -37,7 +37,10 @@ Code Review: Covered Topics
 
 - `Getting Started on OzSTAR (Manodeep Sinha, @manodeep) <code-review/2018_06_08/README.rst>`_
 
+- `Automating Testing With Travis (Jacob Seiler, @jacobseiler) <https://github.com/jacobseiler/testing_tutorial/>`_
+
 - `Running jupyter notebooks remotely (Wael Farah, @wfarah) <code-review/2018_08_03/README.rst>`_
+
 
 ############
 Tutorials

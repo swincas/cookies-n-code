@@ -1,6 +1,6 @@
-Code review, CAS
+Cookies-n-Code, CAS
 ================
 
-A repository for all the fortnightly discussions at **Code Review** at *Centre for Astrophysics and Supercomputing (CAS), Swinburne*. 
+A repository for all the fortnightly discussions at **Cookies-n-Code** at *Centre for Astrophysics and Supercomputing (CAS), Swinburne*. 
 
 
