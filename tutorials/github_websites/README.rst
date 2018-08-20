@@ -35,19 +35,14 @@ Step 5: Git add/commit/push to remote
 You will need to add the remote repository as the origin.:
 
 .. code:: bash
+
   git init
   git remote add origin https://github.com/<USERNAME>/<USERNAME>.github.io
 
 Then commit and push to the origin.:
 
 .. code:: bash 
+
   git add -a
   git commit -m "Initial commit of my website"
   git push -m origin master
-  i
-
-ssh into remote host (ozstar):
-
-.. code:: bash
-
-  ssh myusername@ozstar.hpc.swin.edu
