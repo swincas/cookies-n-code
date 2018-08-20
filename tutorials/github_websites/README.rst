@@ -22,4 +22,16 @@ Download any template to start with.
 
 Step 3: Make local repository
 """""""""""""""""""""""""""""
+Create a folder on your computer with the same name as the one you created on github. i.e ``jsmith.github.io``. This will be the location of file for the website.
 
+Step 4: Put template in local repository
+""""""""""""""""""""""""""""""""""""""""
+Extract the selected template into the repository you created onto your local machine. There should be a file called index.html.
+
+Step 5: Git add/commit/push to remote
+"""""""""""""""""""""""""""""""""""""
+
+.. code:: bash
+    git init
+    git add -a
+    git commit -m "Initial commit of my website"
