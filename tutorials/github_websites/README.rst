@@ -32,15 +32,15 @@ Extract the selected template into the repository you created onto your local ma
 
 Step 5: Git add/commit/push to remote
 """""""""""""""""""""""""""""""""""""
-You will need to add the remote repository as the origin.
+You will need to add the remote repository as the origin.:
 
 .. code:: bash
-   git init
-   git remote add origin https://github.com/<USERNAME>/<USERNAME>.github.io
+  git init
+  git remote add origin https://github.com/<USERNAME>/<USERNAME>.github.io
 
-Then commit and push to the origin.
+Then commit and push to the origin.:
 
 .. code:: bash 
-    git add -a
-    git commit -m "Initial commit of my website"
-    git push origin master
+  git add -a
+  git commit -m "Initial commit of my website"
+  git push origin master
