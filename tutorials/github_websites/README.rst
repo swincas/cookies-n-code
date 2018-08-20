@@ -43,4 +43,4 @@ Then commit and push to the origin.:
 .. code:: bash 
   git add -a
   git commit -m "Initial commit of my website"
-  git push origin master
+  git push -m origin master
