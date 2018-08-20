@@ -44,3 +44,10 @@ Then commit and push to the origin.:
   git add -a
   git commit -m "Initial commit of my website"
   git push -m origin master
+  i
+
+ssh into remote host (ozstar):
+
+.. code:: bash
+
+  ssh myusername@ozstar.hpc.swin.edu
