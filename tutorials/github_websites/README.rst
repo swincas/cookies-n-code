@@ -39,7 +39,7 @@ Extract the selected template into the repository you created onto your local ma
 
 Step 5: Git add/commit/push to remote
 """""""""""""""""""""""""""""""""""""
-You will need to add the remote repository as the origin.:
+Now to push the website template to github. You will need to add the remote repository as the origin.:
 
 .. code:: bash
 
@@ -53,3 +53,16 @@ Then commit and push to the origin.:
   git add -a
   git commit -m "Initial commit of my website"
   git push -m origin master
+
+
+You should now be able to go to the url ``<USERNAME>.github.io`` and view your website.
+
+Step 6: Modifying the template
+""""""""""""""""""""""""""""""
+Obviously you are going to modify the template. This can be done by editing the index.html file. index.html is the home page of the website. Some themes come with additional pages such as generic.html or elements.html. 
+
+generic.html: This is a generic additional page for your website, you can duplicate this to make many pages.
+
+elements.html: This page lists a bunch of different icons, buttions and objects you can add to your website. By looking at the htlm you can work out how to use them.
+
+
