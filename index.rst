@@ -91,6 +91,13 @@ Intro to SQL Databases
 
 - `Intro to SQL (Sarah Hegarty, @) <tutorials/databases/README.rst>`_ 
 
+
+***************
+Github Websites
+***************
+
+- `Creating and hosting your website with github (Adam Batten, @abatten) <code-review/tutorials/github_websites>`_
+  
 #######################
 External Web Resources
 #######################
