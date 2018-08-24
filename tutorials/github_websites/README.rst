@@ -2,8 +2,15 @@
 Creating a website using Github
 ===============================
 
+Author: Adam Batten
+Year: 2018
+
+Step 0: Create a Github Account
+"""""""""""""""""""""""""""""""
+This one is pretty obvious.
+
 Step 1: Create Github Repository
-"""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""
 Create an empty repository on Github with the name ``<USERNAME>.github.io``.
 
 i.e if your username is jsmith, then you create a repository called ``jsmith.github.io``
