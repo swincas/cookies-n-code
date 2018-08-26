@@ -96,7 +96,7 @@ Intro to SQL Databases
 Github Websites
 ***************
 
-- `Creating and hosting your website with github (Adam Batten, @abatten) <code-review/tutorials/github_websites>`_
+- `Creating and hosting your website with github (Adam Batten, @abatten) <tutorials/github_websites/README.rst>`_
   
 #######################
 External Web Resources
