@@ -39,6 +39,12 @@ Code Review: Covered Topics
 
 - `Automating Testing With Travis (Jacob Seiler, @jacobseiler) <https://github.com/jacobseiler/testing_tutorial/>`_
 
+- `Running jupyter notebooks remotely (Wael Farah, @wfarah) <code-review/2018_08_03/README.rst>`_
+
+- `Intro to setting up SSH Keys and SSH config (Adam Batten, @abatten) <code-review/2018_05_11/README.rst>`_
+
+- `Another intro to mpi4py (Jacob Seiler, @jacobseiler) <code-review/2018_05_25/README.rst>`_
+
 ############
 Tutorials
 ############
@@ -85,6 +91,13 @@ Intro to SQL Databases
 
 - `Intro to SQL (Sarah Hegarty, @) <tutorials/databases/README.rst>`_ 
 
+
+***************
+Github Websites
+***************
+
+- `Creating and hosting your website with github (Adam Batten, @abatten) <tutorials/github_websites/README.rst>`_
+  
 #######################
 External Web Resources
 #######################
