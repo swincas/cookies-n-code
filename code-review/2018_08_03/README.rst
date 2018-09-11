@@ -56,7 +56,7 @@ Start a jupyter-notebook server but without a browser by running the following c
 
 .. code:: bash
 
-  jupyter-notebook --no-browser --ip=$HOST
+  jupyter-notebook --no-browser --ip=$HOSTNAME
 
 The "--ip=$HOST" flag specifies that the notebook server will listen on johnXX IP address rather than localhost.
 
