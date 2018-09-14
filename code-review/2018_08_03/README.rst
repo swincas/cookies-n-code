@@ -8,7 +8,7 @@ ssh into remote host (ozstar):
 
 .. code:: bash
 
-  ssh myusername@ozstar.hpc.swin.edu
+  ssh myusername@ozstar.swin.edu.au
 
 Check whether jupyter-notebook exists by running:
 
@@ -36,7 +36,7 @@ Request an interactive node with some resources using the srun wrapper, sinterac
 
 .. code:: bash
 
-  sinteractive --time=01:00:00 --mem=2GB
+  sinteractive --time=1:00:00 --mem=2GB
 
 This will request 1 cpu with 2 GB of RAM with a walltime of 1 hour for your jupyter-notebook session.
 
@@ -44,7 +44,7 @@ When the resources are allocated, you will be returned a command prompt on the c
 
 .. code:: bash
   
-  echo $HOST
+  echo $HOSTNAME
 
 This should return something like: john32
 
@@ -56,7 +56,7 @@ Start a jupyter-notebook server but without a browser by running the following c
 
 .. code:: bash
 
-  jupyter-notebook --no-browser --ip=$HOST
+  jupyter-notebook --no-browser --ip=$HOSTNAME
 
 The "--ip=$HOST" flag specifies that the notebook server will listen on johnXX IP address rather than localhost.
 
@@ -66,7 +66,7 @@ If the server successfully launches, it should print something like:
 
 *http://john32:8888/?token=hf7hjbakd93bd92n497hdfn203nf*
 
-Note the port number that the server binds to (8888 in this case), let's call it the *remote_port*, as we're going to use it in the next step.
+Note the port number that the server binds to (8888 in this case), let's call it the *remote_port*, as we're going to use it in the next step. You can also specify a different port by using the "--port" option.
 
 Step 4:
 """""""
@@ -75,7 +75,7 @@ In a new terminal, ssh into ozstar, but this time using the port forwarding flag
 
 .. code:: bash
 
-  ssh myusername@ozstar.hpc.swin.edu -L local_port:host:remote_port
+  ssh myusername@ozstar.swin.edu.au -L local_port:host:remote_port
 
 replacing *remote_port* by what was given in step 3 (8888 in this example), and *host* by what was given in step 2. For simplicity, let's make *local_port=remote_port*.
 
