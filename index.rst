@@ -103,6 +103,12 @@ The Python Visualization Mega-Month
 ###################################
 
 ***************
+Interactive Plotting with Bokeh
+***************
+
+- `Interactive Python Plots with Bokeh (Aditya Parthasarathy, @aparthas3112) <tutorials/python-vis_all/GUI_CodeReview>`_ 
+
+***************
 Dos and Do-nots
 ***************
 
