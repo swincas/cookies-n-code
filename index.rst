@@ -10,7 +10,7 @@ Code Review: Covered Topics
 
 - `Jupyter Notebook and emcee (Caitlin Adams, @caitlinadams) <tutorials/jupyter_notebook_emcee/emcee_notebook.ipynb>`_
 
-- `Python Virtual Environments Cheat-Sheet (Collin Jacobs, @coljac) <code-review/2017_07_07/venvs.md>`_
+- `Python Virtual Environments Cheat-Sheet (Colin Jacobs, @coljac) <code-review/2017_07_07/venvs.md>`_
 
 - `Speeding up your Python code -- writing a C extension for python (Manodeep Sinha, @manodeep) <code-review/2017_07_21/README.rst>`_
 
@@ -97,7 +97,23 @@ Github Websites
 ***************
 
 - `Creating and hosting your website with github (Adam Batten, @abatten) <tutorials/github_websites/README.rst>`_
-  
+
+###################################
+The Python Visualization Mega-Month
+###################################
+
+***************
+Dos and Do-nots
+***************
+
+- `Dos and do-nots for plotting in Python (Renée Spiewak, @respiewak) <tutorials/python-vis_all/Dos-n-Donts_Py-Vis.ipynb>`_ 
+
+********************************
+Passing Axis to Combined Figures
+********************************
+
+- `Passing Matplotlib axes to functions to make easy multi-panel plots (Jacob Seiler, @jacobseiler) <tutorials/python-vis_all/passing_axis.ipynb>`_ 
+
 #######################
 External Web Resources
 #######################
