@@ -97,7 +97,23 @@ Github Websites
 ***************
 
 - `Creating and hosting your website with github (Adam Batten, @abatten) <tutorials/github_websites/README.rst>`_
-  
+
+###################################
+The Python Visualization Mega-Month
+###################################
+
+***************
+Dos and Do-nots
+***************
+
+- `Dos and do-nots for plotting in Python (Renée Spiewak, @respiewak) <tutorials/python-vis_all/Dos-n-Donts_Py-Vis.ipynb>`_ 
+
+********************************
+Passing Axis to Combined Figures
+********************************
+
+- `Passing Matplotlib axes to functions to make easy multi-panel plots (Jacob Seiler, @jacobseiler) <tutorials/python-vis_all/passing_axis.ipynb>`_ 
+
 #######################
 External Web Resources
 #######################
