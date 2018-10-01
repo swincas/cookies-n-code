@@ -26,7 +26,7 @@ List of topics
 |                           |                          |  Jacob                 |
 |                           |                          |                        |
 +---------------------------+--------------------------+------------------------+
-| Postgres/MongoDB          | Reneee, Aditya, Manodeep |                        |
+| Postgres/MongoDB          | Renee, Aditya, Manodeep |                        |
 |                           |                          |                        |
 +---------------------------+--------------------------+------------------------+
 | Making GUIs (or games?)   |                          |                        |
