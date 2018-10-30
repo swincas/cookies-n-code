@@ -98,6 +98,12 @@ Github Websites
 
 - `Creating and hosting your website with github (Adam Batten, @abatten) <tutorials/github_websites/README.rst>`_
 
+*********************
+Shell Tips and Tricks
+*********************
+
+- `Shell Tips and Tricks (Adam Batten, @abatten) <tutorials/shell_tips/shell_tips.txt>`_
+
 ###################################
 The Python Visualization Mega-Month
 ###################################
@@ -112,7 +118,7 @@ Dos and Do-nots
 Passing Axis to Combined Figures
 ********************************
 
-- `Passing Matplotlib axes to functions to make easy multi-panel plots (Jacob Seiler, @jacobseiler) <tutorials/python-vis_all/passing_axis.ipynb>`_ 
+- `Passing Matplotlib axes to functions to make easy multi-panel plots (Jacob Seiler, @jacobseiler) <tutorials/python-vis_all/passing_axis.ipynb>`_
 
 #######################
 External Web Resources
