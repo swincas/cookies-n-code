@@ -1,5 +1,5 @@
 Shell Tips and Tricks
 
-Adam: cd -
+Adam, @abatten: cd -
 Using cd - will take you back to the last directory you were in.
 This is good for changing between two directories.
