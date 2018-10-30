@@ -1,0 +1,5 @@
+Shell Tips and Tricks
+
+Adam, @abatten: cd -
+Using cd - will take you back to the last directory you were in.
+This is good for changing between two directories.
