@@ -1,5 +1,10 @@
 Shell Tips and Tricks
 
-Adam, @abatten: cd -
-Using cd - will take you back to the last directory you were in.
+Adam, @abatten: `cd -`
+Using `cd -` will take you back to the last directory you were in.
 This is good for changing between two directories.
+
+Renee, @respiewak: `grep -A NUM`
+If you're interested in a few lines of a file _following_ a particular
+keyword, using `grep -A NUM` is your best bet. The opposite is
+`grep -B NUM`, to show lines before the matching line. 
