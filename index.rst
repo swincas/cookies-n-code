@@ -43,7 +43,10 @@ Code Review: Covered Topics
 
 - `Intro to setting up SSH Keys and SSH config (Adam Batten, @abatten) <code-review/2018_05_11/README.rst>`_
 
-- `Another intro to mpi4py (Jacob Seiler, @jacobseiler) <code-review/2018_05_25/README.rst>`_
+- `Another intro to mpi4py (Jacob Seiler, @jacobseiler)
+  <code-review/2018_05_25/README.rst>`_
+
+- `Demystifying C pointers and function calls (Manodeep Sinha, @manodeep) <code-review/2018_11_02/README.rst>`_
 
 ############
 Tutorials
