@@ -11,7 +11,10 @@ keyword, using `grep -A NUM` is your best bet. The opposite is
 `grep -B NUM`, to show lines before the matching line. 
 
 `head` and `tail`
-`head` without any flags will give you the first 10 lines of the input (file), and `tail` will give you the last 10. Add a number as a flag (e.g., `head -20`) and you now get that number of lines (first or last). Use `-n N` for a similar effect (showing N lines). OR show **all but** the first N lines with `tail -n +N` (all but the last N lines with `head -n -N`). 
+`head` without any flags will give you the first 10 lines of the input (file), and `tail` will 
+give you the last 10. Add a number as a flag (e.g., `head -20`) and you now get that number of 
+lines (first or last). Use `-n N` for a similar effect (showing N lines). OR show **all but** 
+the first N lines with `tail -n +N` (all but the last N lines with `head -n -N`). 
 
 
 Daniel, @DBerke: `find`
