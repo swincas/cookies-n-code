@@ -8,3 +8,38 @@ Renee, @respiewak: `grep -A NUM`
 If you're interested in a few lines of a file _following_ a particular
 keyword, using `grep -A NUM` is your best bet. The opposite is
 `grep -B NUM`, to show lines before the matching line. 
+
+Daniel, @DBerke: `find`
+`find` is a really powerful command that can replicate or replace the 
+functionality of several other commands such as ls, grep, or rm. The problem
+is that it's SO powerful that it's not easy to use at first due to all the
+options. Just a few really helpful ones:
+
+-type [d,f]
+    Follow this with a `d` for directory or `f` for file. Allows you to filter
+    out what you want find to search for.
+-maxdepth, -mindepth n
+    This tells find how many directories deep to search. You can easily limit
+    it to looking only in the current directory, or to search everything below
+    the current directory, or only in directories exactly two deep.
+-delete
+    Powerful. *Extremely* dangerous. But also useful. Ever tried to delete a few
+    thousand files with rm and have it fail because the argument list is too
+    long? `find . * -delete` will delete everything in the current folder, no
+    matter how many there are.
+-exec utility {} [;|+]
+    A rather interesting alternative to using a pipe, this will execute a
+    given program on each object returned by find. Must be terminated by
+    either a semicolon (which operates on each path-name individually) or a plus
+    sign (with gives the program as many path-names as it can handle at each
+    invocation). The '{}' is used to stand in for the path-name(s). ';' may
+    need to be escaped in the shell as '\;'.
+    Oh yeah, you can use this to chain successive find commands together, too.
+
+Taken together, find can do some extremely powerful things in a single
+command.
+
+Also a resource I use a lot, The UNIX Grymoire:
+http://www.grymoire.com/Unix/index.html
+Helpful, understandable tutorials on things like regular expressions, find,
+sed, the bash shell, etc.
