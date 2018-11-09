@@ -4,10 +4,15 @@ Adam, @abatten: `cd -`
 Using `cd -` will take you back to the last directory you were in.
 This is good for changing between two directories.
 
+
 Renee, @respiewak: `grep -A NUM`
 If you're interested in a few lines of a file _following_ a particular
 keyword, using `grep -A NUM` is your best bet. The opposite is
 `grep -B NUM`, to show lines before the matching line. 
+
+`head` and `tail`
+`head` without any flags will give you the first 10 lines of the input (file), and `tail` will give you the last 10. Add a number as a flag (e.g., `head -20`) and you now get that number of lines (first or last). Use `-n N` for a similar effect (showing N lines). OR show **all but** the first N lines with `tail -n +N` (all but the last N lines with `head -n -N`). 
+
 
 Daniel, @DBerke: `find`
 `find` is a really powerful command that can replicate or replace the 
@@ -43,3 +48,27 @@ Also a resource I use a lot, The UNIX Grymoire:
 http://www.grymoire.com/Unix/index.html
 Helpful, understandable tutorials on things like regular expressions, find,
 sed, the bash shell, etc.
+
+
+Marisa @mgeyer: recap extensions, basenames etc in tcsh
+Been using this a lot this week:
+
+set file = /usr/joe/backup.tar.gz
+
+echo $file:h   #head
+echo $file:t   #tail
+echo $file:r   #root
+echo $file:e   #extension
+echo $file:t:r:r  #combos
+echo $file:h:h
+will produce this:
+
+/usr/joe
+backup.tar.gz
+/usr/joe/backup.tar
+gz
+backup
+/usr
+
+
+
