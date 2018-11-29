@@ -47,6 +47,31 @@ options. Just a few really helpful ones:
 Taken together, find can do some extremely powerful things in a single
 command.
 
+A practical example: I have 17,591 FITS files spread out over 197 directories
+corresponding to individual stars. I know some (a small fraction) of these
+files, contrary to what I want, have a signal-to-noise ratio of < 200, as
+noted in a FITS header called 'SNR'. Running this command from the parent
+directory containing all the subdirectories allows me to find all such files:
+
+find . -maxdepth 2 -type f -name ADP*.fits | xargs -n 1 dfits  | fitsort SNR
+ | grep -v SNR | awk ' $2 < 200 { print }'
+
+`find` searches for all ADP*.fits files one level down below the current
+directory, then passes those file names one at a time (using xargs) to dfits,
+which spits out all the FITS header information to fitsort, which displays
+the filename and the value of any headers given (in this case, 'SNR'). (It
+also diplays a row at the start consisting of 'FILENAME     SNR', which the 
+`grep -v` removes.) `awk` then takes the second column of the resulting
+output (containing the numerical value of the SNR) and evaluates it, printing
+the line (which contains the filename) if the SNR is less than 200.
+
+The output looks something like this:
+HD126525/ADP.2014-09-16T11:03:33.730.fits	156.75           	
+HD126525/ADP.2014-09-16T11:03:45.367.fits	185.1            	
+HD126525/ADP.2014-09-16T11:04:13.733.fits	181.45 
+...
+
+
 Also a resource I use a lot, The UNIX Grymoire:
 http://www.grymoire.com/Unix/index.html
 Helpful, understandable tutorials on things like regular expressions, find,
