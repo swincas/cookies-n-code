@@ -1,0 +1,56 @@
+#Messier number/Common name|Object type|distance (kly)|Constellation
+M1/Crab Nebula|Supernova remnant|4.9-8.1|Taurus
+M4|Globula cluster|33.9|Scorpius
+M6/Butterfly Cluster|Open cluster|1.6|Scorpius
+M7/Ptolemy Cluster|Open cluster|0.65-1.31|Scorpius
+M8/Lagoon Nebula|Nebula|4.1|Sagittarius
+M11/Wild Duck Cluster|Open cluster|6.2|Scutum
+M13/Great Globular Cluster in Hercules|Globular cluster|22.2|Hercules
+M15|Globular cluster|33|Pegasus
+M16/Eagle Nebula|Nebula|7|Serpens
+M17/Omega Nebula|Nebula|5-6|Sagittarius
+M20/Trifid Nebula|Nebula|5.2|Sagittarius
+M22/Sagittarius Cluster|Globular cluster|9.6-11.6|Sagittarius
+M24/Sagittarius Star Cloud|Mikly Way star cloud|~10|Sagittarius
+M27/Dumbbell Nebula|Nebula|1.148-1.52|Vulpecula
+M29/Cooling Tower|Open cluster|7.2|Cygnus
+M30|Globular cluster|Capricornus
+M31/Andromeda Galaxy|Galaxy, spiral|2,420-2,650|Andromeda
+M32|Galaxy, dwarf elliptical|2,410-2,570|Andromeda
+M33/Triangulum Galaxy|Galaxy, spiral|2,380-3,070|Triangulum
+M35|Open cluster|2.8|Gemini
+M37|Open cluster|4.511|Auriga
+M40/Winnecke 4|Double star|0.51|Ursa Major
+M42/Orion Nebula|Nebula|1.324-1.364|Orion
+M43/De Mairan’s Nebula|Nebula|1.6|Orion
+M44/Beehive Cluster|Open cluster|0.577|Cancer
+M45/Pleiades|Open cluster|0.39-0.46|Taurus
+M49|Galaxy, elliptical|53,600-58,200|Virgo
+M50|Open cluster|3.2|Monoceros
+M51/Whirlpool Galaxy|Galaxy, spiral|19,000-27,000|Canes Venatici
+M52|Open cluster|5.0|Cassiopeia
+M57/Ring Nebula|Nebula|1.6-3.8|Lyra
+M60|Galaxy, elliptical|51,000-59,000|Virgo
+M62|Globular cluster|22.2|Ophiuchus
+M63/Sunflower Galaxy|Galaxy, spiral|37,000|Canes Venatici
+M64/Black Eye Galaxy|Galaxy, spiral|22,000-26,000|Coma Berenices
+M65/Leo Triplet|Galaxy, barred spiral|41,000-42,000|Leo
+M66/Leo Triplet|Galaxy, barred spiral|31,000-41,000|Leo
+M71|Globular cluster|13.0|Sagitta
+M73|Asterism|2.5|Aquarius
+M74|Galaxy, spiral|24,000-36,000|Pisces
+M76/Little Dumbbell Nebula|Nebula|2.5|Perseus
+M77/Cetus A|Galaxy, spiral|47,000|Cetus
+M78|Nebula|1.6|Orion
+M97|Globular cluster|41|Lepus
+M81/Bode’s Galaxy|Galaxy, spiral|11,400-12,200|Ursa Major
+M82/Cigar Galaxy|Galaxy, starburst|10,700-12,300|Ursa Major
+M83/Southern Pinwheel Galaxy|Galaxy, barred spiral|14,700|Hydra
+M84|Galaxy, lenticular|57,000-63,000|Virgo
+M87/Virgo A|Galaxy, elliptical|51,870-55,130|Virgo
+M93|Open cluster|3.6|Puppis
+M97/Owl Nebula|Nebula|2.03|Ursa Major
+M101/Pinwheel Galaxy|Galaxy, spiral|19,100-22,400|Ursa Major
+M102/Spindle Galaxy|Galaxy, lenticular|50,000|Draco
+M104/Sombrero Galaxy|Galaxy, spiral|28,700-30,900|Virgo
+M110|Galaxy, dwarf elliptical|2,600-2,780|Andromeda
