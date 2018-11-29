@@ -1,6 +1,6 @@
 #Messier number/Common name|Object type|distance (kly)|Constellation
 M1/Crab Nebula|Supernova remnant|4.9-8.1|Taurus
-M4|Globula cluster|33.9|Scorpius
+M4|Globular cluster|33.9|Scorpius
 M6/Butterfly Cluster|Open cluster|1.6|Scorpius
 M7/Ptolemy Cluster|Open cluster|0.65-1.31|Scorpius
 M8/Lagoon Nebula|Nebula|4.1|Sagittarius
@@ -11,7 +11,7 @@ M16/Eagle Nebula|Nebula|7|Serpens
 M17/Omega Nebula|Nebula|5-6|Sagittarius
 M20/Trifid Nebula|Nebula|5.2|Sagittarius
 M22/Sagittarius Cluster|Globular cluster|9.6-11.6|Sagittarius
-M24/Sagittarius Star Cloud|Mikly Way star cloud|~10|Sagittarius
+M24/Sagittarius Star Cloud|Milky Way star cloud|~10|Sagittarius
 M27/Dumbbell Nebula|Nebula|1.148-1.52|Vulpecula
 M29/Cooling Tower|Open cluster|7.2|Cygnus
 M30|Globular cluster|Capricornus
