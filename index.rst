@@ -48,6 +48,9 @@ Code Review: Covered Topics
 
 - `Demystifying C pointers and function calls (Manodeep Sinha, @manodeep) <code-review/2017--2018/2018_11_02/README.rst>`_
 
+- `Code and Plot Brags (Many authors - added by Manodeep Sinha, @manodeep) <code-review/2019_02_15/README.rst>`_
+
+
 ############
 Tutorials
 ############
