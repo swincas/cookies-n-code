@@ -1,0 +1,124 @@
+Shell Tips and Tricks
+
+Adam, @abatten: `cd -`
+Using `cd -` will take you back to the last directory you were in.
+This is good for changing between two directories.
+
+
+Renee, @respiewak: `grep -A NUM`
+If you're interested in a few lines of a file _following_ a particular
+keyword, using `grep -A NUM` is your best bet. The opposite is
+`grep -B NUM`, to show lines before the matching line. 
+
+`head` and `tail`
+`head` without any flags will give you the first 10 lines of the input (file), and `tail` will 
+give you the last 10. Add a number as a flag (e.g., `head -20`) and you now get that number of 
+lines (first or last). Use `-n N` for a similar effect (showing N lines). OR show **all but** 
+the first N lines with `tail -n +N` (all but the last N lines with `head -n -N`). 
+
+
+Daniel, @DBerke: `find`
+`find` is a really powerful command that can replicate or replace the 
+functionality of several other commands such as ls, grep, or rm. The problem
+is that it's SO powerful that it's not easy to use at first due to all the
+options. Just a few really helpful ones:
+
+-type [d,f]
+    Follow this with a `d` for directory or `f` for file. Allows you to filter
+    out what you want find to search for.
+-maxdepth, -mindepth n
+    This tells find how many directories deep to search. You can easily limit
+    it to looking only in the current directory, or to search everything below
+    the current directory, or only in directories exactly two deep.
+-delete
+    Powerful. *Extremely* dangerous. But also useful. Ever tried to delete a few
+    thousand files with rm and have it fail because the argument list is too
+    long? `find . * -delete` will delete everything in the current folder, no
+    matter how many there are.
+-exec utility {} [;|+]
+    A rather interesting alternative to using a pipe, this will execute a
+    given program on each object returned by find. Must be terminated by
+    either a semicolon (which operates on each path-name individually) or a plus
+    sign (with gives the program as many path-names as it can handle at each
+    invocation). The '{}' is used to stand in for the path-name(s). ';' may
+    need to be escaped in the shell as '\;'.
+    Oh yeah, you can use this to chain successive find commands together, too.
+
+Taken together, find can do some extremely powerful things in a single
+command.
+
+A practical example: I have 17,591 FITS files spread out over 197 directories
+corresponding to individual stars. I know some (a small fraction) of these
+files, contrary to what I want, have a signal-to-noise ratio of < 200, as
+noted in a FITS header called 'SNR'. Running this command from the parent
+directory containing all the subdirectories allows me to find all such files:
+
+find . -maxdepth 2 -type f -name ADP*.fits | xargs -n 1 dfits  | fitsort SNR
+ | grep -v SNR | awk ' $2 < 200 { print }'
+
+`find` searches for all ADP*.fits files one level down below the current
+directory, then passes those file names one at a time (using xargs) to dfits,
+which spits out all the FITS header information to fitsort, which displays
+the filename and the value of any headers given (in this case, 'SNR'). (It
+also diplays a row at the start consisting of 'FILENAME     SNR', which the 
+`grep -v` removes.) `awk` then takes the second column of the resulting
+output (containing the numerical value of the SNR) and evaluates it, printing
+the line (which contains the filename) if the SNR is less than 200.
+
+The output looks something like this:
+HD126525/ADP.2014-09-16T11:03:33.730.fits	156.75           	
+HD126525/ADP.2014-09-16T11:03:45.367.fits	185.1            	
+HD126525/ADP.2014-09-16T11:04:13.733.fits	181.45 
+...
+
+
+Also a resource I use a lot, The UNIX Grymoire:
+http://www.grymoire.com/Unix/index.html
+Helpful, understandable tutorials on things like regular expressions, find,
+sed, the bash shell, etc.
+
+
+Marisa @mgeyer: recap extensions, basenames etc in tcsh
+Been using this a lot this week:
+
+set file = /usr/joe/backup.tar.gz
+
+echo $file:h   #head
+echo $file:t   #tail
+echo $file:r   #root
+echo $file:e   #extension
+echo $file:t:r:r  #combos
+echo $file:h:h
+will produce this:
+
+/usr/joe
+backup.tar.gz
+/usr/joe/backup.tar
+gz
+backup
+/usr
+
+
+
+Danny Price:
+Edit your ~/.input_rc and add:
+
+"\e[A":history-search-backward
+"\e[B":history-search-forward
+Then restart your terminal. This lets you search through your
+bash history using the up and down keys – type that start of
+the command (e.g. ‘ech’) and then press up to complete (e.g.
+‘echo HELLO’).
+
+Use a variable if you’re calling the same thing
+
+> fn=my_filename.txt
+> head $fn
+This works really well if you use the input_rc thing, or if you
+have a more complex command (e.g. run.py -a $fn -b $fn -c $fn2).
+
+One-liner for loops with ls follow from this:
+
+for fn in `ls | grep txt`; do head $fn; done
+this loops through all files (ls) that have txt in the name
+(piped to grep txt), then runs head on them.
