@@ -421,3 +421,4 @@ By using a function factory and validating the input value for ``b``, it would a
 And, it also becomes impossible for the user to accidentally provide a different value later on, as the created function does not take that input argument.
 
 The same principle can be applied to class factories, where one wants to provide the same input argument(s) to the initialization of a class every time.
+Also note that all wrapper decorators are essentially function factories themselves.
