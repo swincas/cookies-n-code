@@ -190,8 +190,10 @@ Below is a shortened version of the ``docstring_substitute`` decorator in my `e1
 
         # This function performs the docstring substitution on a given definition
         def do_substitution(target):
-            # Perform docstring substitution
-            target.__doc__ = target.__doc__ % (params)
+            # Check if target has a docstring that can be substituted to
+            if target.__doc__:
+                # Perform docstring substitution
+                target.__doc__ = target.__doc__ % (params)
 
             # Raise error if target has no docstring
             else:
