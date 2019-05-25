@@ -338,3 +338,86 @@ As before, the application is as follows (where the decorator is generated first
         return(a+b)
 
     test = add_x(5)(test)
+
+Function factories
+******************
+The decorator factories I have shown above, are special types of **function factories**.
+As mentioned before, a function factory is a function that takes a set of input arguments, stores them locally and returns a function definition (or a class definition for class factories).
+Function factories other than decorator factories are usually only used in special situations, and you will probably not commonly encounter one.
+However, that does not mean they are not useful.
+
+Whenever any definition is called, it has access to all input arguments that were provided to it (called **locals**) and all variables available in the namespace of the definition (called **globals**).
+Anything higher than the scope of this definition (so, the namespace in which it exists) has no access to the locals, while anything lower sees all locals as globals.
+The following will explain this a bit better, where I use comments to indicate what the globals and locals are in specific scopes:
+
+.. code:: python
+
+    var1 = 0
+
+    # globals contains all Python builtins
+    # locals contains var1
+
+    def test(var2):
+        # globals contains builtins and var1
+        # locals contains var2
+        pass
+
+    def test2(var3):
+        # globals contains builtins and var1
+        # locals contains var3
+        pass
+
+    def factory(var4):
+        # globals contains builtins and var1
+        # locals contains var4
+        def test3(var5):
+            # globals contains builtins, var1 and var4
+            # locals contains var5
+            pass
+        return(test3)
+ 
+Whenever a scope exits (like, a function returns), all corresponding pointers to its locals are lost.
+If Python detects that an object has no pointers anymore, it will remove it from memory.
+However, this is where the usefulness of function factories comes in.
+
+In the example given above, ``var4`` is a local variable to ``factory()``, but a global variable to ``test3()``.
+As ``test3()`` is returned by the function factory, it is necessary for ``var4`` to be available.
+For that reason, Python makes a special local environment for the ``test3()`` function such that ``var4`` can be accessed (you can check this for yourself by looking at the namespace of the returned function).
+But, this environment is only available to the ``test3()`` function.
+As the scope of the user is outside the function factory after calling it, the user itself will only have access to the builtins and ``var1``.
+Therefore, this makes the ``var4`` variable private to the ``test3()`` function, and to my knowledge, this is the only way to make something as close to private as possible in Python (it can actually still be accessed from the outside, although this is incredibly hard).
+
+So, what is the benefit of this?
+For example, we could rewrite our ``set_b_unity`` decorator from before to a proper function factory that allows for default values to be set:
+
+.. code:: python
+
+    def get_default_b_test(b):
+        def test(a, b=b):
+            return(a+b)
+        return(test)
+
+The code here is very similar as before, but it also has a few differences.
+By using a function factory, we were able to set a default value for ``b`` (which is not possible with decorators).
+Now, when executing ``get_default_b_test(5)``, we will get a ``test(a, b)`` function that by default has its ``b`` set to 5.
+
+However, imagine that you have a function that when called once, should always be called with the exact same value for a specific input argument every single time it is called in this process.
+This can be done very quickly by simply removing the input argument ``b`` from ``test(a, b)`` in the definition above:
+
+.. code:: python
+
+    def get_static_b_test(b):
+        def test(a):
+            return(a+b)
+        return(test)
+
+``get_static_b_test(5)`` will now return ``test(a)`` with ``b`` automatically set to 5 and nobody can change it.
+
+Doing so can have a few benefits.
+Depending on what kind of functions you are using, it might be necessary to check the validity of the input arguments.
+If the user always has to provide the same value anyways, it is kind of pointless to validate that input argument every time the function is called, which might take quite some time to do.
+Plus, it is annoying that the user has to provide it the entire time.
+By using a function factory and validating the input value for ``b``, it would allow you to check it once, and never having to do that again.
+And, it also becomes impossible for the user to accidentally provide a different value later on, as the created function does not take that input argument.
+
+The same principle can be applied to class factories, where one wants to provide the same input argument(s) to the initialization of a class every time.
