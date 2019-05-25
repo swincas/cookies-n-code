@@ -263,6 +263,8 @@ In most cases, the order in which the decorators are applied does not matter, as
 In this case however, both decorators influence the outcome of the function and therefore the order is important.
 
 If we would use this new definition as ``test(2, 6)``, we should get either 17 or 18, depending on the order in which the decorators are applied.
+Think about which answer should be correct and why.
+
 Executing this will give us:
 
 .. code:: python
