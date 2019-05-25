@@ -352,7 +352,7 @@ However, that does not mean they are not useful.
 
 Whenever any definition is called, it has access to all input arguments that were provided to it (called **locals**) and all variables available in the namespace of the definition (called **globals**).
 Anything higher than the scope of this definition (so, the namespace in which it exists) has no access to the locals, while anything lower sees all locals as globals.
-The following will explain this a bit better, where I use comments to indicate what the globals and locals are in specific scopes:
+The following will explain this a bit better, where I use comments to indicate what the globals and locals are in specific scopes (keep in mind that by default, globals can only be viewed and not modified, unless they are declared local using the ``global`` keyword):
 
 .. code:: python
 
