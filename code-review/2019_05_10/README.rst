@@ -389,7 +389,7 @@ As ``test3()`` is returned by the function factory, it is necessary for ``var4``
 For that reason, Python makes a special local environment for the ``test3()`` function such that ``var4`` can be accessed (you can check this for yourself by looking at the namespace of the returned function).
 But, this environment is only available to the ``test3()`` function.
 As the scope of the user is outside the function factory after calling it, the user itself will only have access to the builtins and ``var1``.
-Therefore, this makes the ``var4`` variable private to the ``test3()`` function, and to my knowledge, this is the only way to make something as close to private as possible in Python (it can actually still be accessed from the outside, although this is incredibly hard).
+Therefore, this makes the ``var4`` variable private to the ``test3()`` function, and to my knowledge, this is the only way to make something as close to private as possible in Python (it can actually still be viewed from the outside, although this is incredibly hard).
 
 So, what is the benefit of this?
 For example, we could rewrite our ``set_b_unity`` decorator from before to a proper function factory that allows for default values to be set:
