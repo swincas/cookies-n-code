@@ -97,7 +97,7 @@ What happened here is that our decorator ``add_one`` returned a function definit
 For that reason, the answer will be 9.
 
 It is also possible to modify the input of our test function.
-For example, let's say that we want input argument `b` to always be equal to 1.
+For example, let's say that we want input argument ``b`` to always be equal to 1.
 Then, we can achieve this by using the following decorator (as the input is now modified, the decorator cannot be generalized):
 
 .. code:: python
@@ -109,7 +109,7 @@ Then, we can achieve this by using the following decorator (as the input is now 
         return(new_func)
 
 Using this on our test function in the same way as before, will give us a function definition ``test(a)``.
-The `b` input argument can no longer be provided, as we set it to unity within the decorator.
+The ``b`` input argument can no longer be provided, as we set it to unity within the decorator.
 Using our new test function will give:
 
 .. code:: python
