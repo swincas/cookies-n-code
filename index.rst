@@ -50,7 +50,7 @@ Code Review: Covered Topics
 
 - `Code and Plot Brags (Many authors - added by Manodeep Sinha, @manodeep) <code-review/2019_02_15/README.rst>`_
 
-- `Introduction to Python decorators (Ellert van der Velden, @1313e)` <code-review/2019_05_10/README.rst>`_
+- `Introduction to Python decorators (Ellert van der Velden, @1313e) <code-review/2019_05_10/README.rst>`_
 
 
 ############
