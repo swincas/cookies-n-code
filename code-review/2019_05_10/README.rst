@@ -1,11 +1,11 @@
-********************************************************
-Introduction to Python decorators and function factories
-********************************************************
+***********************************************
+Introduction to Python decorators and factories
+***********************************************
 
 In Python, it may sometimes be useful to apply a specific operation on several function/class definitions.
 Think for example about reusing the same docstring several times throughout a Python package, or wanting to register all function names in a global list.
 In the first case, it would be inconvenient to have to copy/paste the same docstring snippet over and over again, especially when you want to make a change to it later on (and you realize you used it over 100 times).
-However, Python has a solution to this problem: **decorators**.
+However, Python has a solution to this problem: **decorators** and **factories**.
 
 What are decorators?
 ********************
@@ -339,8 +339,8 @@ As before, the application is as follows (where the decorator is generated first
 
     test = add_x(5)(test)
 
-Function factories
-******************
+Function/class factories
+************************
 The decorator factories I have shown above, are special types of **function factories**.
 As mentioned before, a function factory is a function that takes a set of input arguments, stores them locally and returns a function definition (or a class definition for class factories).
 Function factories other than decorator factories are usually only used in special situations, and you will probably not commonly encounter one.
