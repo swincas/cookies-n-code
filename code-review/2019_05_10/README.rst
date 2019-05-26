@@ -48,7 +48,7 @@ Therefore, using a decorator in this way is the same as executing:
 Examples of decorators
 **********************
 The decorator from before had no functionality at all, as it simply returned the definition that was provided to it.
-Here, I introduce two different types of decorators: wrapper and attribute.
+Here, I introduce two different types of decorators: **wrapper** and **utility**.
 
 Wrapper decorators
 ------------------
@@ -152,10 +152,10 @@ So, we would have to modify both our decorators to:
 Now, our test function will correctly display its name and docstring.
 However, be aware that using ``wraps()`` in a decorator that modifies the inputs may lead to confusing situations, as the original docstring probably still mentions all input arguments the function originally took.
 
-Attribute decorator
--------------------
-Whereas a wrapper decorator modifies the inputs and outputs of a definition, an attribute decorator directly modifies the attributes of one without wrapping it.
-A simple example of an attribute decorator would be a decorator that sets the name of a definition to ``'hello'``:
+Utility decorator
+-----------------
+Whereas a wrapper decorator indirectly modifies a definition by creating a new definition around it, an utility decorator makes its changes directly without wrapping anything.
+A simple example of an utility decorator would be a decorator that sets the name of a definition to ``'hello'``:
 
 .. code:: python
 
@@ -172,7 +172,7 @@ A simple example of an attribute decorator would be a decorator that sets the na
 
 As you can see here, the decorator returns the original function after modifying one of its attributes (its name), unlike a wrapper decorator which returns a new definition.
 
-Attribute decorators can have many different uses, just like wrapper decorators.
+Utility decorators can have many different uses, just like wrapper decorators.
 Remember that I mentioned that decorators can be used for copy/pasting docstrings into definitions?
 One could for example write a decorator that can substitute docstring snippets into the docstring of a definition.
 Below is a shortened version of the ``docstring_substitute`` decorator in my `e13Tools package <https://github.com/1313e/e13Tools/blob/bb83a26ed892adc73bf8f6a7cce6d946cee87652/e13tools/utils.py#L128>`_:
@@ -232,6 +232,34 @@ This decorator would allow one to write a description of a very common input arg
 Not only would this make your descriptions consistent, it also saves you a lot of trouble if you ever want to change the description.
 (If you are interested, my e13Tools package has two other docstring decorators: one for copying the entire docstring of a function to another one and an other for appending a docstring to another.)
 
+However, utility decorators do not necessarily change the attributes of a definition.
+For example, you might want a decorator that automatically adds the name of a definition to the ``__all__`` declaration of a module.
+Such a decorator would look like this (`full decorator <https://github.com/1313e/e13Tools/blob/f5050bed5e56c873a8dd218eccfc12f4f60d9420/e13tools/utils.py#L36>`_):
+
+.. code:: python
+    from inspect import currentframe
+
+    # Define custom decorator for automatically appending names to __all__
+    def add_to_all(obj):
+        # Obtain caller's frame
+        frame = currentframe().f_back
+
+        # Get __all__ list in caller's frame
+        __all__ = frame.f_globals.get('__all__')
+
+        # Append name of given obj to __all__
+        __all__.append(obj.__name__)
+
+        # Return obj
+        return(obj)
+
+If the module of the corresponding decorated function has a ``__all__`` list, this decorator would add its name to that list.
+For those interested, ``currentframe()`` retrieves the frame/scope the user is currently in, allowing access to all of its bound namespaces.
+One can cycle through all higher frames/scopes using ``frame.f_back`` and look (and sometimes modify) them.
+
+One final example of an utility decorator is the built-in ``property`` decorator, which allows one to add instance properties to a class definition.
+You can read more about its uses `here <https://docs.python.org/3/library/functions.html#property>`_.
+
 Stacking decorators
 *******************
 In some cases, it might be necessary to use more than just a single decorator on a definition.
@@ -276,7 +304,7 @@ Now, take a moment to think about why the answer is 17 and not 18.
 
 The reason for this can basically be found in the explanation of decorators above.
 Whenever a decorator is used, it takes the definition found right below it and returns a new definition.
-Therefore, the ``double`` decorator is applied first, which returns a new definition unto which the ``add_one`` decorator is applied.
+Therefore, the ``double`` decorator is applied first, which returns a new definition onto which the ``add_one`` decorator is applied.
 So, decorators are always applied from the bottom.
 As I have shown before, the application of these decorators could also be written as:
 
@@ -302,10 +330,10 @@ Decorator factories
 *******************
 A decorator factory is a function that takes input arguments, saves them locally and returns a decorator definition.
 In essence, it is a special type of **function factory**, which I will explain later.
-In the case of the ``wraps()`` and ``docstring_substitute()`` decorator factories, one first provides it with the information on what is being wrapped or what should be substituted.
-It then returns an attribute decorator that will use the provided input when the decorator is used on a definition.
+In the case of the ``wraps()`` and ``docstring_substitute()`` decorator factories, one first provides it with the information on what is being wrapped or what should be substituted, respectively.
+It then returns an utility decorator that will use the provided input when the decorator is used on a definition.
 
-For attribute decorators, it is quite common that they are provided by decorator factories.
+For utility decorators, it is quite common that they are provided by decorator factories.
 However, one can also perfectly make a wrapper decorator factory.
 For example, let's say that we want to use ``add_one``, but instead of applying it as many times as needed, we want a decorator that simply adds whatever number we want to the output.
 This can be done with a decorator factory:
@@ -389,7 +417,7 @@ As ``test3()`` is returned by the function factory, it is necessary for ``var4``
 For that reason, Python makes a special local environment for the ``test3()`` function such that ``var4`` can be accessed (you can check this for yourself by looking at the namespace of the returned function).
 But, this environment is only available to the ``test3()`` function.
 As the scope of the user is outside the function factory after calling it, the user itself will only have access to the builtins and ``var1``.
-Therefore, this makes the ``var4`` variable private to the ``test3()`` function, and to my knowledge, this is the only way to make something as close to private as possible in Python (it can actually still be viewed from the outside, although this is incredibly hard).
+Therefore, this makes the ``var4`` variable private to the ``test3()`` function, and to my knowledge, this is the only way to make something as close to private as possible in Python (it can actually still be viewed from the outside by using ``currentframe()`` and ``frame.f_back`` mentioned above in a smart way, but this is incredibly hard).
 
 So, what is the benefit of this?
 For example, we could rewrite our ``set_b_unity`` decorator from before to a proper function factory that allows for default values to be set:
@@ -425,4 +453,15 @@ By using a function factory and validating the input value for ``b``, it would a
 And, it also becomes impossible for the user to accidentally provide a different value later on, as the created function does not take that input argument.
 
 The same principle can be applied to class factories, where one wants to provide the same input argument(s) to the initialization of a class every time.
-Also note that all wrapper decorators are essentially function factories themselves.
+Also note that *all wrapper decorators are essentially function factories themselves*.
+
+Wrap up (TL;DR)
+**************
+So, in summary, Python decorators are utility functions that enable you to apply a common operation onto several definitions by simply adding a single line above it.
+Their main use is to aid in the consistency and clarity of your code, avoiding having to write (and execute) several lines of code every time such an operation needs to be used.
+However, they have many other uses.
+You can find quite a few good tutorials on the internet about advanced use-cases of decorators by simply Googling for it, or you can watch a video on Python decorators from `PyCon 2019 <https://www.youtube.com/watch?v=MjHpMCIvwsY>`_.
+
+Most decorators are produced by decorator factories; special types of function factories.
+Function/class factories allow you to create customized function/class definitions, which have been created to be used in specific situations.
+They allow a programmer to provide more control and customization over the workings of a definition, while they can also significantly speed up codes if used properly (by foregoing input argument validation and many if-statements for example).
