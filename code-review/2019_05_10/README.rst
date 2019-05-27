@@ -237,6 +237,7 @@ For example, you might want a decorator that automatically adds the name of a de
 Such a decorator would look like this (`full decorator <https://github.com/1313e/e13Tools/blob/f5050bed5e56c873a8dd218eccfc12f4f60d9420/e13tools/utils.py#L36>`_):
 
 .. code:: python
+
     from inspect import currentframe
 
     # Define custom decorator for automatically appending names to __all__
