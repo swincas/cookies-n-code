@@ -256,7 +256,7 @@ Such a decorator would look like this (`full decorator <https://github.com/1313e
 
 If the module of the corresponding decorated function has a ``__all__`` list, this decorator would add its name to that list.
 For those interested, ``currentframe()`` retrieves the frame/scope the user is currently in, allowing access to all of its bound namespaces.
-One can cycle through all higher frames/scopes using ``frame.f_back`` and look (and sometimes modify) them.
+One can cycle through all higher frames/scopes using ``frame.f_back`` and view (and sometimes modify) them.
 
 One final example of an utility decorator is the built-in ``property`` decorator, which allows one to add instance properties to a class definition.
 You can read more about its uses `here <https://docs.python.org/3/library/functions.html#property>`_.
@@ -381,7 +381,7 @@ However, that does not mean they are not useful.
 
 Whenever any definition is called, it has access to all input arguments that were provided to it (called **locals**) and all variables available in the namespace of the definition (called **globals**).
 Anything higher than the scope of this definition (so, the namespace in which it exists) has no access to the locals, while anything lower sees all locals as globals.
-The following will explain this a bit better, where I use comments to indicate what the globals and locals are in specific scopes (keep in mind that by default, globals can only be viewed and not modified, unless they are declared local using the ``global`` keyword):
+The following will explain this a bit better, where I use comments to indicate what the globals and locals are in specific scopes (keep in mind that by default, globals can only be viewed and not modified, unless they are declared as local using the `global statement <https://docs.python.org/3/reference/simple_stmts.html#global>`_):
 
 .. code:: python
 
@@ -431,7 +431,8 @@ For example, we could rewrite our ``set_b_unity`` decorator from before to a pro
         return(test)
 
 The code here is very similar as before, but it also has a few differences.
-By using a function factory, we were able to set a default value for ``b`` (which is not possible with decorators).
+By using a function factory, we were able to set a default value for ``b`` without the need for wrapping the function.
+This avoids the problem with misleading docstrings, as the docstring for ``test()`` can be written inside the function factory, including the default value for ``b`` (by using the ``docstring_substitute()`` decorator from before).
 Now, when executing ``get_default_b_test(5)``, we will get a ``test(a, b)`` function that by default has its ``b`` set to 5.
 
 However, imagine that you have a function that when called once, should always be called with the exact same value for a specific input argument every single time it is called in this process.
