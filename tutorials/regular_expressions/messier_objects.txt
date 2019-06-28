@@ -1,4 +1,7 @@
 #Messier number/Common name|Object type|distance (kly)|Constellation
+
+
+|
 M1/Crab Nebula|Supernova remnant|4.9-8.1|Taurus
 M4|Globular cluster|33.9|Scorpius
 M6/Butterfly Cluster|Open cluster|1.6|Scorpius
@@ -43,7 +46,7 @@ M76/Little Dumbbell Nebula|Nebula|2.5|Perseus
 M77/Cetus A|Galaxy, spiral|47,000|Cetus
 M78|Nebula|1.6|Orion
 M97|Globular cluster|41|Lepus
-M81/Bode’s Galaxy|Galaxy, spiral|11,400-12,200|Ursa Major
+M81/Bode's Galaxy|Galaxy, spiral|11,400-12,200|Ursa Major
 M82/Cigar Galaxy|Galaxy, starburst|10,700-12,300|Ursa Major
 M83/Southern Pinwheel Galaxy|Galaxy, barred spiral|14,700|Hydra
 M84|Galaxy, lenticular|57,000-63,000|Virgo
