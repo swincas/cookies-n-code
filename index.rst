@@ -53,6 +53,7 @@ Code Review: Covered Topics
 
 - `Introduction to Python decorators and factories (Ellert van der Velden, @1313e) <code-review/2019_05_10/README.rst>`_
 
+- `Introduction to awk (Manodeep Sinha, @manodeep) <code-review/2019_06_21/README.rst>`_
 
 ############
 Tutorials
@@ -77,11 +78,11 @@ Intel VTune Profiler - A GUI showing how long each line of code takes to run
 - `Intel Vtune Visual Profiler (Jacob Seiler, @jacobseiler) <tutorials/vtune_profiling/README.rst>`_
 
 ***************************************************
-How to run `emcee` - A flexible MCMC python code 
+How to run `emcee` - A flexible MCMC python code
 ***************************************************
 
 - `Jupyter Notebook with emcee (Caitlin Adams, @caitlinadams) <tutorials/jupyter_notebook_emcee/emcee_notebook.ipynb>`_
-  
+
 ********************************************
 S2PLOT -- 3D interactive Visualization tool
 ********************************************
@@ -89,16 +90,16 @@ S2PLOT -- 3D interactive Visualization tool
 - `GEM by Chris Fluke, @cfluke on 26/04/2017 <tutorials/s2plot/README.rst>`_
 
 *********************************************************************************************
-`Line_Profiler` - A Python package showing how long each line of a Python function takes to run 
+`Line_Profiler` - A Python package showing how long each line of a Python function takes to run
 *********************************************************************************************
 
-- `Jupyter Notebook with with line_profiler (Jacob Seiler, @jacobseiler) <code-review/2017--2018/2017_12_07/line_profiler.py.ipynb>`_ 
+- `Jupyter Notebook with with line_profiler (Jacob Seiler, @jacobseiler) <code-review/2017--2018/2017_12_07/line_profiler.py.ipynb>`_
 
 ***********************
-Intro to SQL Databases 
+Intro to SQL Databases
 ***********************
 
-- `Intro to SQL (Sarah Hegarty, @) <tutorials/databases/README.rst>`_ 
+- `Intro to SQL (Sarah Hegarty, @) <tutorials/databases/README.rst>`_
 
 
 ***************
@@ -121,13 +122,13 @@ The Python Visualization Mega-Month
 Interactive Plotting with Bokeh
 ***************
 
-- `Interactive Python Plots with Bokeh (Aditya Parthasarathy, @aparthas3112) <tutorials/python-vis_all/GUI_CodeReview>`_ 
+- `Interactive Python Plots with Bokeh (Aditya Parthasarathy, @aparthas3112) <tutorials/python-vis_all/GUI_CodeReview>`_
 
 ***************
 Dos and Do-nots
 ***************
 
-- `Dos and do-nots for plotting in Python (Renée Spiewak, @respiewak) <tutorials/python-vis_all/Dos-n-Donts_Py-Vis.ipynb>`_ 
+- `Dos and do-nots for plotting in Python (Renée Spiewak, @respiewak) <tutorials/python-vis_all/Dos-n-Donts_Py-Vis.ipynb>`_
 
 ********************************
 Passing Axis to Combined Figures
@@ -144,6 +145,3 @@ Talks at the Python in Astronomy Conference series
 ****************************************************
 
 All the talks are stored and indexed on `Zenodo <https://zenodo.org/communities/pyastro/?page=1&size=20)>`_
-
-
-
