@@ -114,6 +114,12 @@ Shell Tips and Tricks
 
 - `Shell Tips and Tricks (Adam Batten, @abatten) <tutorials/shell_tips/shell_tips.txt>`_
 
+****************
+Machine Learning
+****************
+
+- `Predict the gender of a name using ML (Wael Farah, @wfarah) <tutorials/machine_learning/name_classifier/README.rst>`_
+
 ###################################
 The Python Visualization Mega-Month
 ###################################
