@@ -37,13 +37,12 @@ Python
 
 - `Intro to Pandas for (Leonie Chevalier, @leoniechevalier) <tutorials/pandas_intro/README.rst>`_
 
-- `Jupyter Notebook and emcee (Caitlin Adams, @caitlinadams) <tutorials/jupyter_notebook_emcee/emcee_notebook.ipynb>`_
-
 - `Python Virtual Environments Cheat-Sheet (Colin Jacobs, @coljac) <code-review_archive/2017--2018/2017_07_07/venvs.md>`_
 
 - `Running jupyter notebooks remotely (Wael Farah, @wfarah) <code-review_archive/2017--2018/2018_08_03/README.rst>`_
 
 - `Introduction to Python decorators and factories (Ellert van der Velden, @1313e) <code-review_archive/2019_05_10/README.rst>`_
+
 
 
 The Python Visualisation Mega-Month
@@ -69,6 +68,10 @@ Profiling and Speeding Up Python Code
 - `Speeding up your Python code -- writing a C extension for python (Manodeep Sinha, @manodeep) <code-review_archive/2017--2018/2017_07_21/README.rst>`_
 
 - `Speeding up your Python code -- writing a Cython extension (Wael Farah, @wfarah) <https://github.com/swincas/fast-histogram/tree/master/cython>`_
+
+Python MCMC
+...........
+- `Jupyter Notebook and emcee (Caitlin Adams, @caitlinadams) <tutorials/jupyter_notebook_emcee/emcee_notebook.ipynb>`_
 
 
 Python MPI
@@ -102,15 +105,19 @@ Shell
 *****
 - `Shell environments and Scripting (Leonie Chevalier, @leoniechevalier and Manodeep Sinha, @manodeep) <code-review_archive/2017--2018/2018_04_06/README.rst>`_
 
+- `Introduction to awk (Manodeep Sinha, @manodeep) <code-review_archive/2019_06_21/README.rst>`_
 - `Shell Tips and Tricks (Adam Batten, @abatten) <tutorials/shell_tips/shell_tips.txt>`_
 
-- `Introduction to awk (Manodeep Sinha, @manodeep) <code-review_archive/2019_06_21/README.rst>`_
   
 C
 *
 - `Demystifying C pointers and function calls (Manodeep Sinha, @manodeep) <code-review_archive/2017--2018/2018_11_02/README.rst>`_
 
 - `Intel Vtune Visual Profiler (Jacob Seiler, @jacobseiler) <tutorials/vtune_profiling/README.rst>`_
+
+SQL
+***
+- `Intro to SQL (Sarah Hegarty, @) <tutorials/databases/README.rst>`_
 
 
 OzStar
@@ -123,19 +130,27 @@ OzStar
 
 Misc. Topics
 ************
-
-- `An Introduction to SSH: SSH Keys and SSH Config (Adam Batten, @abatten) <tutorials/ssh_intro>`_ **BEGINNER FRIENDLY**
-
-- `Makefiles (Manodeep Sinha, @manodeep) <code-review_archive/2017--2018/2017_03_31/README.rst>`_
-
-- `Intro to setting up SSH Keys and SSH config (Adam Batten, @abatten) <code-review_archive/2017--2018/2018_05_11>`_
+- `S2PLOT -- 3D interactive visualization tool (Chris Fluke, @cfluke) GEM on 26/04/2017 <tutorials/s2plot/README.rst>`_
 
 - `Creating a GPU version of an existing CPU code (Greg Poole, @gpoole) <code-review_archive/2017--2018/2017_10_13/README.rst>`_
 
 - `Understanding how Executables and Packages are Found (Manodeep Sinha, @manodeep) <code-review_archive/2017--2018/2017_10_27/README.rst>`_
 
+- `Makefiles (Manodeep Sinha, @manodeep) <code-review_archive/2017--2018/2017_03_31/README.rst>`_
+
+
+SSH Keys and Config
+...................
+- `An Introduction to SSH: SSH Keys and SSH Config (Adam Batten, @abatten) <tutorials/ssh_intro>`_ **BEGINNER FRIENDLY**
+- `Intro to setting up SSH Keys and SSH config (Adam Batten, @abatten) <code-review_archive/2017--2018/2018_05_11>`_
+
+Code and Plot Brags
+...................
 - `Code and Plot Brags (Many authors - added by Manodeep Sinha, @manodeep) <code-review_archive/2019_02_15/README.rst>`_
 
-- `GEM by Chris Fluke, @cfluke on 26/04/2017 <tutorials/s2plot/README.rst>`_
 
-- `Intro to SQL (Sarah Hegarty, @) <tutorials/databases/README.rst>`_
+
+
+
+
+
