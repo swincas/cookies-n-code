@@ -38,4 +38,4 @@ Misc
 ****
 - `Intro to setting up SSH Keys and SSH config (Adam Batten, @abatten) <code-review_archive/2017--2018/2018_05_11>`_
 
-- `An Introduction to SSH: SSH Keys and SSH Config (Adam Batten, @abatten) <code-review/tutorials/ssh_intro>`_ **BEGINNER FRIENDLY**
+- `An Introduction to SSH: SSH Keys and SSH Config (Adam Batten, @abatten) <tutorials/ssh_intro>`_ **BEGINNER FRIENDLY**
