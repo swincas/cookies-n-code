@@ -1,5 +1,5 @@
 Cookies-n-Code, CAS
-================
+===================
 
 A repository for all the current and past discussions and tutorialss at **Cookies 'n' Code** at *Centre for Astrophysics and Supercomputing (CAS), Swinburne*. 
 
@@ -15,3 +15,27 @@ Covered Topics
 --------------
 
 You can find all of the covered topics `here <index.rst>`_.
+
+
+
+Python
+******
+
+
+Speeding Up Code
+................
+- `Speeding up your Python code -- writing a C extension for python (Manodeep Sinha, @manodeep) <code-review_archive/2017--2018/2017_07_21/README.rst>`_
+
+- `Speeding up your Python code -- writing a Cython extension (Wael Farah, @wfarah) <https://github.com/swincas/fast-histogram/tree/master/cython>`_
+
+Shell
+*****
+
+C
+*
+
+Misc
+****
+- `Intro to setting up SSH Keys and SSH config (Adam Batten, @abatten) <code-review_archive/2017--2018/2018_05_11>`_
+
+- `An Introduction to SSH: SSH Keys and SSH Config (Adam Batten, @abatten) <code-review/tutorials/ssh_intro>`_ **BEGINNER FRIENDLY**
