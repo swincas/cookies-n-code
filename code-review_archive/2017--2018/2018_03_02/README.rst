@@ -13,65 +13,68 @@ The current presentation talking about git and Github is `here (pdf) <VersionCon
 Sample .gitconfig
 ********************
 
-[user]
-	name = Your Name
-	email = your_email_address
+::
 
-[credential]
-    helper = osxkeychain
+	[user]
+	  name = Your Name
+	  email = your_email_address
 
-[core]
-  excludesfile = ~/.gitignore
-  filemode = true
+	[credential]
+	  helper = osxkeychain
 
-[branch]
-  autosetupmerge = true
+	[core]
+	  excludesfile = ~/.gitignore
+	  filemode = true
 
-[url "https://"]
-  insteadOf = git://
+	[branch]
+	  autosetupmerge = true
 
-[alias]
-  dfw = diff --ignore-space-change
-  st  = status
-  lgp = "log -p"
-  lg = "log --format='%Cred%h%Creset %s %Cgreen(%cr) %C(blue)<%an>%Creset%C(yellow)%d%Creset' --no-merges"
-  unstage = reset -q HEAD --
-  discard = checkout --
-  uncommit = reset --mixed HEAD~
-  amend = commit --amend
-  nevermind = !git reset --hard HEAD && git clean -d -f
-  graph = log --graph -10 --branches --remotes --tags  --format=format:'%Cgreen%h %Creset# %<(75,trunc)%s (%cN, %cr) %Cred%d' --date-order
-  precommit = diff --cached --diff-algorithm=minimal -w
-  branches = branch -a
-  tags = tag
-  stashes = stash list
+	[url "https://"]
+	  insteadOf = git://
 
-[color]
-  diff = auto
-  status = auto
-  branch = auto
-  interactive = auto
-  ui = true
+	[alias]
+	  dfw = diff --ignore-space-change
+	  st  = status
+	  lgp = "log -p"
+	  lg = "log --format='%Cred%h%Creset %s %Cgreen(%cr) %C(blue)<%an>%Creset%C(yellow)%d%Creset' --no-merges"
+	  unstage = reset -q HEAD --
+	  discard = checkout --
+	  uncommit = reset --mixed HEAD~
+	  amend = commit --amend
+	  nevermind = !git reset --hard HEAD && git clean -d -f
+	  graph = log --graph -10 --branches --remotes --tags  --format=format:'%Cgreen%h %Creset# %<(75,trunc)%s (%cN, %cr) %Cred%d' --date-order
+	  precommit = diff --cached --diff-algorithm=minimal -w
+	  branches = branch -a
+	  tags = tag
+	  stashes = stash list
 
-[color "branch"]
-  current = yellow reverse
-  local = yellow
-  remote = green
+	[color]
+	  diff = auto
+	  status = auto
+	  branch = auto
+	  interactive = auto
+	  ui = true
 
-[color "diff"]
-  meta = blue bold
-  frag = magenta bold
-  old = red bold
-  new = green bold
+	[color "branch"]
+	  current = yellow reverse
+	  local = yellow
+	  remote = green
 
-[color "status"]
-  added = green
-  changed = yellow
-  untracked = cyan
+	[color "diff"]
+	  meta = blue bold
+	  frag = magenta bold
+	  old = red bold
+	  new = green bold
 
-[push]
-  default = matching
+	[color "status"]
+	  added = green
+	  changed = yellow
+	  untracked = cyan
 
+	[push]
+	  default = matching
+
+.. 
 
 Author
 --------------------------------------------------------
