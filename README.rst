@@ -21,11 +21,12 @@ Beginner Friendly Topics
 ************************
 
 - `An Introduction to SSH: SSH Keys and SSH Config (Adam Batten, @abatten) <tutorials/ssh_intro>`_
+- `Getting started with version control (Git and Github) (Manodeep Sinha, @manodeep) <code-review_archive/2017--2018/2018_03_02/README.rst>`_
 
 
 Git
 ***
-- `Getting started with version control (git and mercurial) (Manodeep Sinha, @manodeep) <code-review_archive/2017--2018/2018_03_02/README.rst>`_
+- `Getting started with version control (git and mercurial) (Manodeep Sinha, @manodeep) <code-review_archive/2017--2018/2018_03_02/README.rst>`_ **BEGINNER FRIENDLY**
 
 - `Intro to git <tutorials/intro_to_git/README.rst>`_
 
