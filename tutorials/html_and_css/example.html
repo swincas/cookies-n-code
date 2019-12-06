@@ -6,11 +6,12 @@
  </head>
  <body>
 
-  <h1>The Basics: Tags, Elements, and Attributes</h1>
+  <h1>Introduction to HTML and CSS</h1>
+  <h2>The Basics: Tags, Elements, and Attributes</h2>
 
   <p>HTML stands for HyperText Markup Language, and is a markup language similar to LaTeX, Markdown, or RST. Initially developed in 1991, it's seen multiple versions over the years, with the latest major version being HTML 5 in 2014 (though it's up to 5.2 now). HTML 5 brought a lot of major improvements and removed some cruft from earlier versions, so it's kinda like the Python 3 of HTML except not as backwards-incompatible.</p>
 
-  <h2>Tags</h2>
+  <h3>Tags</h3>
 
   <p>Everything in HTML lives inside <span class="italics">tags</span>. Tags are always enclosed in angle braces, like this: <span class="block">&lt;...&gt;</span>. This document itself lives entirely inside  the <span class="tag">html</span> tag. Most tags need to be closed, which is done by adding a &#47; just after the opening brace. Here's an example of a properly-formatted tag:</p>
 
@@ -22,7 +23,7 @@
 
   <p>(HTML is an incredibly forgiving language, in that browsers have all sorts of spaghetti code to deal with legacy features and improper formatting. For instance, it's often possible to get away without closing certain tags; browsers will make a best guess which is often correct. For the sake of everyone who will ever read your code [includin you], please do not abuse this.)</p>
 
-  <h3>Document Structure</h3>
+  <h4>Document Structure</h4>
 
   <p>Within the <span class="tag">body</span> tag, you can have headers given within tags running from <span class="block">&lt;<span class="tag">h1</span>&gt;</span> to <span class="block">&lt;<span class="tag">h6</span>&gt;</span>, which give different sizes of headers. The <span class="tag">p</span> tag allows you to group text into <span class="bold">p</span>aragraphs.</p>
 
@@ -30,7 +31,7 @@
 
   <p>Another highly important tag is the <span class="tag">a</span> tag. This is what allows you to <span class="italics">hyperlink</span> to other webpages. (No, I don't know why <span class="block">a</span> stands for "hyperlink".) To actually make a working hyperlink, we need to know about:</p>
 
-  <h2>Attributes</h2>
+  <h3>Attributes</h3>
 
   <p>Everything contained within a matching pair of tags is known as an <span class="italics">element</span>. Elements can have <span class="italics">attributes</span>, which are specified within the open tag. For example, to make a working hyperlink, you use the <span class="attribute">href</span> attribute within an <span class="tag">a</span> tag, like so:</p>
 
@@ -44,17 +45,17 @@
 
 <p>(Some tags, like <span class="tag">img</span>, don't require a matching end tag. Exceptions to rules make everyones' lives exciting! &lt;/sarcasm&gt; [&larr;not actually a real tag])</p>
 
-  <h3>Some Important Attributes</h3>
+  <h4>Some Important Attributes</h4>
 
   <p>Two very useful attributes that can be used in any element are the <span class="attribute">id</span> and <span class="attribute">class</span> attributes. <span class="attribute">id</span> allows you specify a unique ID to any particular element, while <span class="attribute">class</span> allows you to designate multiple elements as members of the same class. IDs and classes are completely up to you to decide, and allow you to easily specify styling to specific elements or sets of elements using CSS.</p>
 
   <p>There's a lot more to talk about with HTML, but even with just this small collection of tags and attributes you can accomplish a lot. You can learn a lot more about it at the official <abbr title="World Wide Web Consortium">W3C</abbr> schools page: <a href="https://www.w3schools.com/html/default.asp">https://www.w3schools.com/html/default.asp</a>.</p>
 
-  <h1>CSS</h1>
+  <h2>CSS</h2>
 
   <p>CSS, which stands for <span class="italics">Cascading Style Sheets</span>, was introduced in the 1990s to solve a problem: HTML is intended to specify the <span class="italics">layout</span> and <span class="italics">structure</span> of a webpage, not the <span class="italics">style</span>. While browsers do have generic styles sheets which they apply to webpages (such as making an <span class="tag">h1</span> element bigger than an <span class="tag">h6</span> element), in general browsers apply minimal formatting to HTML, instead relying on an accompanying style sheet to dictate how a webpage should appear.</p>
 
-  <h2>Rule-sets</h2>
+  <h3>Rule-sets</h2>
 
   <p>CSS works by using a system of <span class="italics">rule-sets</span>, which select elements in the page using a variety of specification methods (called selectors). The rule-set then applies a particular style change to the element(s). The "cascading" part come from how these style changes propagate and override each other (which has a defined order, but is more advanced than needed here). This is also where the <span class="tag">div</span> and <span class="tag">span</span> tags and <span class="attribute">id</span> and <span class="attribute">class</span> attributes come into play.</p>
 
@@ -66,7 +67,7 @@
 
   <p>The period is used to indicate that this rule should apply to the class which is immediately following the period, in this case "red-text". If you instead want to apply a rule to all tags of a particular kind, you just put the tag name (without a period). If you want to make a rule to apply to a particular ID, you preface it with an <a href="https://en.wikipedia.org/wiki/Number_sign#Other_names_in_English">octothorp</a> (&#35;) instead.</p>
 
-  <h2>Applying CSS to a Webpage</h2>
+  <h3>Applying CSS to a Webpage</h3>
 
  <p>Now, it's <span class="italics">possible</span> to apply CSS to a single element using the <span class="attribute">style</span> attribute in that element, like this: <span class="block">&ltp style="color:red;"&gt;...&lt&#47;span&gt;</span>. This would give you a paragraph in which everything is red. It's not recommended, however, because the whole point of CSS is to separate structure from style, so putting it in your HTML document muddies the water and makes it harder to update.</p>
 
