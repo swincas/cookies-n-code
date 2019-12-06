@@ -1,0 +1,61 @@
+/* Animation example */
+
+@keyframes example-style {
+    0%   {text-shadow: 4px 4px 4px FireBrick;}
+    20%  {text-shadow: 4px -4px 4px LightSkyBlue;}
+    40%  {text-shadow: -4px -4px 4px Orange;}
+    80%  {text-shadow: -4px 4px 4px ForestGreen;}
+    100% {text-shadow: 4px 4px 4px FireBrick;}
+}
+
+/* Per-element styles */
+
+p, blockquote {
+    font-size: 1.4em;
+}
+
+
+/* ID-specific styles */
+
+#example-style {
+    font-size: 120%;
+    animation-name: example-style;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+
+
+
+/* Class-specific styles */
+
+.small-caps {
+    font-variant: small-caps;
+}
+
+.italics {
+    font-style: italic;
+}
+
+.red-text {
+    color: Red;
+}
+
+.block,.tag,.attribute {
+    font-family: monospace;
+}
+
+.bold,.tag,.attribute {
+    font-weight: bold;
+}
+
+.bigger,.tag,.attribute {
+    font-size: 110%;
+}
+
+.tag {
+    color: DodgerBlue;
+}
+
+.attribute {
+    color: SeaGreen; 
+}
