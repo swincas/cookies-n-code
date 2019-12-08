@@ -2,6 +2,7 @@
 <html>
  <head>
   <link rel="stylesheet" type="text/css" href="example_stylesheet.css">
+<link rel="stylesheet" type="text/css" href="example_2.css">
 
  </head>
  <body>
@@ -21,23 +22,23 @@
 
   <p>Within the <span class="tag">html</span> tag live two other important tags: the  <span class="tag">head</span> and <span class="tag">body</span> tags. The <span class="tag">head</span> tag contains meta information about your webpage: things like the language it's in, or links to CSS stylesheets (we'll get to those!) or JavaScript files. The <span class="tag">body</span> tag contains the actual content of your webpage which will be visible to users.</p>
 
-  <p>(HTML is an incredibly forgiving language, in that browsers have all sorts of spaghetti code to deal with legacy features and improper formatting. For instance, it's often possible to get away without closing certain tags; browsers will make a best guess which is often correct. For the sake of everyone who will ever read your code [includin you], please do not abuse this.)</p>
+  <p>(HTML is an incredibly forgiving language, in that browsers have all sorts of spaghetti code to deal with legacy features and improper formatting. For instance, it's often possible to get away without closing certain tags; browsers will make a best guess which is often correct. For the sake of everyone who will ever read your code [including you], please do not abuse this.)</p>
 
   <h4>Document Structure</h4>
 
-  <p>Within the <span class="tag">body</span> tag, you can have headers given within tags running from <span class="block">&lt;<span class="tag">h1</span>&gt;</span> to <span class="block">&lt;<span class="tag">h6</span>&gt;</span>, which give different sizes of headers. The <span class="tag">p</span> tag allows you to group text into <span class="bold">p</span>aragraphs.</p>
+  <p>Within the <span class="tag">body</span> tag, you can have headers given within tags running from <span class="block">&lt;<span class="tag">h1</span>&gt;</span> to <span class="block">&lt;<span class="tag">h6</span>&gt;</span>, which give different sizes of headers. The <span class="tag">p</span> tag allows you to group text into <span class="bold block">p</span>aragraphs.</p>
 
   <p>Two very useful tags to know about are the <span class="tag">div</span> and <span class="tag">span</span> tags. You can use these as convenient containers to hold whatever content you want. <span class="tag">div</span> is useful as a larger container holding multiple elements within it, while <span class="tag">span</span> is used more for inline test, like when you want to apply a particular <span id="example-style">style</span> to a few words.</p>
 
-  <p>Another highly important tag is the <span class="tag">a</span> tag. This is what allows you to <span class="italics">hyperlink</span> to other webpages. (No, I don't know why <span class="block">a</span> stands for "hyperlink".) To actually make a working hyperlink, we need to know about:</p>
+  <p>Another highly important tag is the <span class="tag">a</span> tag. This is what allows you to <span class="italics">hyperlink</span> to other webpages. (No, I don't know why <span class="tag">a</span> stands for "hyperlink".) To actually make a working hyperlink, we need to know about:</p>
 
   <h3>Attributes</h3>
 
   <p>Everything contained within a matching pair of tags is known as an <span class="italics">element</span>. Elements can have <span class="italics">attributes</span>, which are specified within the open tag. For example, to make a working hyperlink, you use the <span class="attribute">href</span> attribute within an <span class="tag">a</span> tag, like so:</p>
 
-  <blockquote>&lt;a href="http://www.google.com"&gt;A link you can click to go to Google&lt&#47;a&gt</blockquote>
+  <blockquote>&lt;a href="http://www.google.com"&gt;A link you can click to go to Google.com&lt&#47;a&gt</blockquote>
 
-  <p>And here's what that would look like in action: <a href="http://www.google.com">A link you can click to go to Google</a>.</p>
+  <p>And here's what that would look like in action: <a href="http://www.google.com">A link you can click to go to Google.com</a>.</p>
 
   <p>There are a number of attributes in HTML, and different elements can have different attributes attached to them. To display an image, for instance, you'd use the <span class="attribute">src</span> attribute within the <span class="tag">image</span> tag, like so:</p>
 
@@ -69,7 +70,7 @@
 
   <h3>Applying CSS to a Webpage</h3>
 
- <p>Now, it's <span class="italics">possible</span> to apply CSS to a single element using the <span class="attribute">style</span> attribute in that element, like this: <span class="block">&ltp style="color:red;"&gt;...&lt&#47;span&gt;</span>. This would give you a paragraph in which everything is red. It's not recommended, however, because the whole point of CSS is to separate structure from style, so putting it in your HTML document muddies the water and makes it harder to update.</p>
+ <p>Now, it's <span class="italics">possible</span> to apply CSS to a single element using the <span class="attribute">style</span> attribute in that element, like this: <span class="block">&ltp style="color:red;"&gt;...&lt&#47;p&gt;</span>. This would give you a paragraph in which everything is red. It's not recommended, however, because the whole point of CSS is to separate structure from style, so putting it in your HTML document muddies the water and makes it harder to update.</p>
 
   <p>Instead, the recommended way to use CSS is to put it in its own .css file which can be linked to from individual webpages. (Useful if you have a large website with many pages, all of which can link to one CSS file to get a consistent visual style.) To link a style sheet, use the <span class="tag">link</span> tag within the <span class="tag">head</span> of your document, with a couple of new attributes we haven't seen before (<span class="attribute">rel</span> and <span class="attribute">type</span>), and the <span class="attribute">href</span> to provide the link to the file. Here's the element used in this document to link the spreadsheet in the same folder:</p>
 
