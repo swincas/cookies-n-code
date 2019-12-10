@@ -113,7 +113,7 @@ Github Websites
 Introduction to HTML and CSS
 ****************************
 
-- `A short introduction to the basics of HTML and CSS (Daniel Berke, @DBerke) <tutorials/html_and_css/README.rst>`
+- `A short introduction to the basics of HTML and CSS (Daniel Berke, @DBerke) <tutorials/html_and_css/README.rst>`_
 
 *********************
 Shell Tips and Tricks
