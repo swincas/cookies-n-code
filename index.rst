@@ -108,6 +108,13 @@ Github Websites
 
 - `Creating and hosting your website with github (Adam Batten, @abatten) <tutorials/github_websites/README.rst>`_
 
+
+****************************
+Introduction to HTML and CSS
+****************************
+
+- `A short introduction to the basics of HTML and CSS (Daniel Berke, @DBerke) <tutorials/html_and_css/README.rst>`
+
 *********************
 Shell Tips and Tricks
 *********************
