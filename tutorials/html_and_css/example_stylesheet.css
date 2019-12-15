@@ -1,6 +1,6 @@
 /* Animation example */
 
-@keyframes example-style {
+@keyframes shadow-spin {
     0%   {text-shadow: 4px 4px 4px FireBrick;}
     20%  {text-shadow: 4px -4px 4px LightSkyBlue;}
     40%  {text-shadow: -4px -4px 4px Orange;}
@@ -19,7 +19,7 @@ p, blockquote {
 
 #example-style {
     font-size: 120%;
-    animation-name: example-style;
+    animation-name: shadow-spin;
     animation-duration: 8s;
     animation-iteration-count: infinite;
 }
@@ -53,7 +53,7 @@ p, blockquote {
 }
 
 .tag {
-    color: DodgerBlue;
+    color: Red;
 }
 
 .attribute {
