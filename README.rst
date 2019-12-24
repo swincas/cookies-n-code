@@ -44,6 +44,8 @@ Python
 
 - `Introduction to Python decorators and factories (Ellert van der Velden, @1313e) <code-review_archive/2019_05_10/README.rst>`_
 
+- `Introduction to (Py)Qt5 (Ellert van der Velden, @1313e) <tutorials/intro_to_Qt5/intro_to_qt5.pdf>`_
+
 
 
 The Python Visualisation Mega-Month
