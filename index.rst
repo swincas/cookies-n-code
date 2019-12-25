@@ -55,7 +55,7 @@ Code Review: Covered Topics
 
 - `Introduction to awk (Manodeep Sinha, @manodeep) <code-review_archive/2019_06_21/README.rst>`_
 
-- `Introduction to (Py)Qt5 (Ellert van der Velden, @1313e) <tutorials/intro_to_Qt5/intro_to_qt5.pdf>`_
+- `Introduction to (Py)Qt5 (Ellert van der Velden, @1313e) <tutorials/intro_to_Qt5/README.rst>`_
 
 ############
 Tutorials
