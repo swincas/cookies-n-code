@@ -133,7 +133,7 @@ Machine Learning
 Debuggers in Python
 ********************************
 
-- `How and why you should use a debugger in Python (Oliver Coad, @olivercoad) <tutorials/debuggers/>`_
+- `How and why you should use a debugger in Python (Oliver Coad, @olivercoad) <tutorials/debuggers/README.md>`_
 
 ###################################
 The Python Visualization Mega-Month
