@@ -129,6 +129,12 @@ Machine Learning
 
 - `Predict the gender of a name using ML (Wael Farah, @wfarah) <tutorials/machine_learning/name_classifier/README.rst>`_
 
+********************************
+Debuggers in Python
+********************************
+
+- `How and why you should use a debugger in Python (Oliver Coad, @olivercoad) <tutorials/debuggers/>`_
+
 ###################################
 The Python Visualization Mega-Month
 ###################################
