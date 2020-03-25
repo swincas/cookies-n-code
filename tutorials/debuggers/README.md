@@ -1,4 +1,10 @@
+
 # What is a debugger?
+
+Author: Oliver Coad
+Date: 25 March 2020
+
+---
 
 A debugger helps to debug (what a surprise) a target program.
 
