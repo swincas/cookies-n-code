@@ -73,6 +73,13 @@ git - A Version Control Software to Easily Track Changes to Code and Papers
 
 - `Intro to git <tutorials/intro_to_git/README.rst>`_
 
+*****************************************************
+Why/How/When to Release (Research) Software Publicly
+*****************************************************
+
+- `Releasing (Research) Software Publicly (Manodeep Sinha, @manodeep) <tutorials/releasing-code/README.rst>`_
+
+
 *****************************************************************************
 Intel VTune Profiler - A GUI showing how long each line of code takes to run
 *****************************************************************************
