@@ -146,6 +146,7 @@ SSH Keys and Config
 ...................
 - `An Introduction to SSH: SSH Keys and SSH Config (Adam Batten, @abatten) <tutorials/ssh_intro>`_ **BEGINNER FRIENDLY**
 - `Intro to setting up SSH Keys and SSH config (Adam Batten, @abatten) <code-review_archive/2017--2018/2018_05_11>`_
+- `SSH Autocompletion Script (from SciCoder via @respiewak) <code-review-blurbs/autocomplete.sh>`_
 
 Code and Plot Brags
 ...................
