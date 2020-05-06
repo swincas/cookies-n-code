@@ -50,12 +50,16 @@ Then commit and push to the origin.:
 
 .. code:: bash 
 
-  git add -a
+  git add -A
   git commit -m "Initial commit of my website"
   git push -m origin master
 
 
 You should now be able to go to the url ``<USERNAME>.github.io`` and view your website.
+
+Note: Sometimes that doesn't work and you see a blank page. 
+
+To fix this go to settings > options. Click "Choose a Theme" in the Github Pages section. Then click "Select Theme" (It doesn't matter what you select). Then it should work when you go to ``<USERNAME>.github.io``.
 
 Step 6: Modifying the template
 """"""""""""""""""""""""""""""
