@@ -52,7 +52,7 @@ Then commit and push to the origin.:
 
   git add -A
   git commit -m "Initial commit of my website"
-  git push -m origin master
+  git push origin master
 
 
 You should now be able to go to the url ``<USERNAME>.github.io`` and view your website.
