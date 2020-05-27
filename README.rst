@@ -44,6 +44,8 @@ Python
 
 - `Introduction to Python decorators and factories (Ellert van der Velden, @1313e) <code-review_archive/2019_05_10/README.rst>`_
 
+- `Introduction to (Py)Qt5 (Ellert van der Velden, @1313e) <tutorials/intro_to_Qt5/README.rst>`_
+
 
 
 The Python Visualisation Mega-Month
@@ -144,6 +146,7 @@ SSH Keys and Config
 ...................
 - `An Introduction to SSH: SSH Keys and SSH Config (Adam Batten, @abatten) <tutorials/ssh_intro>`_ **BEGINNER FRIENDLY**
 - `Intro to setting up SSH Keys and SSH config (Adam Batten, @abatten) <code-review_archive/2017--2018/2018_05_11>`_
+- `SSH Autocompletion Script (from SciCoder via @respiewak) <code-review-blurbs/autocomplete.sh>`_
 
 Code and Plot Brags
 ...................

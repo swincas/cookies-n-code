@@ -55,6 +55,8 @@ Code Review: Covered Topics
 
 - `Introduction to awk (Manodeep Sinha, @manodeep) <code-review_archive/2019_06_21/README.rst>`_
 
+- `Introduction to (Py)Qt5 (Ellert van der Velden, @1313e) <tutorials/intro_to_Qt5/README.rst>`_
+
 ############
 Tutorials
 ############
@@ -70,6 +72,13 @@ git - A Version Control Software to Easily Track Changes to Code and Papers
 *****************************************************************************
 
 - `Intro to git <tutorials/intro_to_git/README.rst>`_
+
+*****************************************************
+Why/How/When to Release (Research) Software Publicly
+*****************************************************
+
+- `Releasing (Research) Software Publicly (Manodeep Sinha, @manodeep) <tutorials/releasing-code/README.rst>`_
+
 
 *****************************************************************************
 Intel VTune Profiler - A GUI showing how long each line of code takes to run
@@ -108,6 +117,13 @@ Github Websites
 
 - `Creating and hosting your website with github (Adam Batten, @abatten) <tutorials/github_websites/README.rst>`_
 
+
+****************************
+Introduction to HTML and CSS
+****************************
+
+- `A short introduction to the basics of HTML and CSS (Daniel Berke, @DBerke) <tutorials/html_and_css/README.rst>`_
+
 *********************
 Shell Tips and Tricks
 *********************
@@ -119,6 +135,12 @@ Machine Learning
 ****************
 
 - `Predict the gender of a name using ML (Wael Farah, @wfarah) <tutorials/machine_learning/name_classifier/README.rst>`_
+
+********************************
+Debuggers in Python
+********************************
+
+- `How and why you should use a debugger in Python (Oliver Coad, @olivercoad) <tutorials/debuggers/README.md>`_
 
 ###################################
 The Python Visualization Mega-Month
