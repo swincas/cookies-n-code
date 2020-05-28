@@ -109,7 +109,10 @@ Shell
 - `Shell environments and Scripting (Leonie Chevalier, @leoniechevalier and Manodeep Sinha, @manodeep) <code-review_archive/2017--2018/2018_04_06/README.rst>`_
 
 - `Introduction to awk (Manodeep Sinha, @manodeep) <code-review_archive/2019_06_21/README.rst>`_
+
 - `Shell Tips and Tricks (Adam Batten, @abatten) <tutorials/shell_tips/shell_tips.txt>`_
+
+- `Version Control Dotfile (Adam Batten, @abatten) <tutorials/shell_tips/VC_dotfiles/README.md>`_
 
   
 C
@@ -128,6 +131,11 @@ OzStar
 - `Getting Started on OzSTAR (Manodeep Sinha, @manodeep) <code-review_archive/2017--2018/2018_06_08/README.rst>`_
 
 - `Running jupyter notebooks remotely (Wael Farah, @wfarah) <code-review_archive/2017--2018/2018_08_03/README.rst>`_
+
+
+IDES
+****
+- `How and why you should use a debugger in Python (Oliver Coad, @olivercoad) <tutorials/debuggers/README.md>`_
 
 
 
