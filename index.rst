@@ -43,8 +43,6 @@ Code Review: Covered Topics
 
 - `Intro to setting up SSH Keys and SSH config (Adam Batten, @abatten) <code-review_archive/2017--2018/2018_05_11/README.rst>`_
 
-- `Another intro to mpi4py (Jacob Seiler, @jacobseiler) <code-review_archive/2017--2018/2018_05_25/README.rst>`_
-
 - `Demystifying C pointers and function calls (Manodeep Sinha, @manodeep) <code-review_archive/2017--2018/2018_11_02/README.rst>`_
 
 - `Introduction to building a Python package (Ellert van der Velden, @1313e) <https://github.com/1313e/python-package-tutorial>`_
