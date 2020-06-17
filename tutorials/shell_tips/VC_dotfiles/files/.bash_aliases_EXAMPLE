@@ -1,0 +1,25 @@
+#        .bash_aliases
+#        Adam Batten ~ 2018
+#
+
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+alias -- -="cd -"
+
+# After changing .bashrc or aliases, quickly restart shell
+alias restart="source ~/.bashrc"
+
+# How much free space or used space have I got
+alias usedspace="du -ch -d 1"
+alias freespace="df -h"
+
+# Find my IP addesss
+alias ip="ipconfig getifaddr en0"
+alias ipext="curl -s http://checkip.dyndns.org/ | grep -o '[0-9][0-9]*.[0-9][0-9]*.[0-9][0-9]*.[0-9]*'"
+
+
+# Hide messy desktop during presentations
+alias hidedesktop="defaults write com.apple.finder CreateDesktop -bool false; killall Finder;"
+alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true; killall Finder;"

@@ -1,0 +1,68 @@
+#########################
+# Name:    .bashrc
+# Author:  Adam Batten
+# Year:    2018
+#########################
+
+#  A function that will extract basically any compressed file.
+extract () {
+    if [ -f $1 ] ; then
+        case $1 in
+           *.tar.bz2)   tar xvjf $1    ;;
+           *.tar.gz)    tar xvzf $1    ;;
+           *.bz2)       bunzip2 $1     ;;
+           *.rar)       unrar x $1     ;;
+           *.gz)        gunzip $1      ;;
+           *.tar)       tar xvf $1     ;;
+           *.tbz2)      tar xvjf $1    ;;
+           *.tgz)       tar xvzf $1    ;;
+           *.zip)       unzip $1       ;;
+           *.Z)         uncompress $1  ;;
+           *.7z)        7z x $1        ;;
+           *)           echo "don't know how to extract '$1'..." ;;
+        esac
+    else
+        echo "'$1' is not a valid file!"
+    fi
+}
+
+#  Count the number of files in a directory.
+function nf () {
+    if [ $1 ] ; then
+        dir=$1
+        echo $dir
+    else
+        dir=.
+        pwd
+    fi
+
+    ls $dir | wc -l
+}
+
+# Add bash aliases.
+if [ -f ~/.bash_aliases ]; then
+    source ~/.bash_aliases
+fi
+
+# If on laptop
+if [ $HOSTNAME == "<PUT YOUR COMPUTER NAME HERE>" ]; then
+
+# ########################################################
+# Any .bashrc related stuff you want only on your computer
+# ########################################################
+
+fi
+
+# If on Ozstar
+if [ $HOSTNAME == "farnarkle1" ] || [ $HOSTNAME == "farnarkle2" ]; then
+
+# ########################################################
+# Any .bashrc stuff that you want loaded on Ozstar
+# ########################################################
+
+    module load gcc/7.3.0
+    module load git/2.16.0
+    module load python/3.6.4
+
+    module list
+fi
