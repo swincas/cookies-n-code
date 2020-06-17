@@ -23,6 +23,7 @@ Beginner Friendly Topics
 - `An Introduction to SSH: SSH Keys and SSH Config (Adam Batten, @abatten) <tutorials/ssh_intro>`_
 - `Getting started with version control (Git and Github) (Manodeep Sinha, @manodeep) <code-review_archive/2017--2018/2018_03_02/README.rst>`_
 
+- `A beginner's guide to vaex (Mohsen Shamohammadi, @mshamohammadi) <tutorials/vaex_beginners/vaex_tutorial.ipynb>`_
 
 Git
 ***
@@ -45,6 +46,8 @@ Python
 - `Introduction to Python decorators and factories (Ellert van der Velden, @1313e) <code-review_archive/2019_05_10/README.rst>`_
 
 - `Introduction to (Py)Qt5 (Ellert van der Velden, @1313e) <tutorials/intro_to_Qt5/README.rst>`_
+
+- `A beginner's guide to vaex (Mohsen Shamohammadi, @mshamohammadi) <tutorials/vaex_beginners/vaex_tutorial.ipynb>`_
 
 - `Making Pretty Matplotlib Plots with plt.rcParams (Adam Batten, @abatten) <tutorials/pretty_matplotlib_plotting/pretty_matplotlib_plotting.ipynb>`_
 
