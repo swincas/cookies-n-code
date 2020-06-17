@@ -57,6 +57,8 @@ Code Review: Covered Topics
 
 - `Introduction to (Py)Qt5 (Ellert van der Velden, @1313e) <tutorials/intro_to_Qt5/README.rst>`_
 
+- `Making Pretty Matplotlib Plots with plt.rcParams (Adam Batten, @abatten) <tutorials/pretty_matplotlib_plotting/pretty_matplotlib_plotting.ipynb>`_
+
 ############
 Tutorials
 ############
