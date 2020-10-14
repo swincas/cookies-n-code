@@ -122,13 +122,19 @@ Github Websites
 Introduction to HTML and CSS
 ****************************
 
-- `A short introduction to the basics of HTML and CSS (Daniel Berke, @DBerke) <tutorials/html_and_css/README.rst>`_
+- `A short introduction to the basics of HTML and CSS (Daniel Berke, @DBerke) <tutorials/html_and_css/README.rst>`
 
 *********************
 Shell Tips and Tricks
 *********************
 
 - `Shell Tips and Tricks (Adam Batten, @abatten) <tutorials/shell_tips/shell_tips.txt>`_
+
+*******************************************
+Some Modern, Updated Command Line Utilities
+*******************************************
+
+- `Handy CL utilities (Daniel Berke, @DBerke) <tutorials/rust_utilities/rust_utilities.rst>`_
 
 ****************
 Machine Learning
