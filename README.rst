@@ -117,6 +117,7 @@ Shell
 
 - `Version Control Dotfile (Adam Batten, @abatten) <tutorials/shell_tips/VC_dotfiles/README.md>`_
 
+- `Some Useful, Modern Command Line Utilities (Daniel Berke, @DBerke) <tutorials/rust_utilities/rust_utilities.rst>`_
   
 C
 *
