@@ -30,7 +30,7 @@ For instance, if you want to convert "The rine in Spine falls minely on the plin
 
 The ``-i`` flag performs the substitution in-place in the file (rather than printing it to standard output), the 'g' at the end means to perform the substitution every time the first pattern is found (instead of just the first time per line), and the slashes are just traditional, but required for delineation. For comparison, the equivalent command with ``sd`` is::
 
-    $ sd ine ain test.txt
+    $ sd ine ain my_fair_lady_script.txt
 
 No need for additional flags, no symbols to delineate the patterns to find and replace, it automatically assumes you want to replace everywhere rather than just the first instance per line. ``sd`` also has familiar features from ``sed`` like capture groups::
 
