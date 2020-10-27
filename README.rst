@@ -25,6 +25,8 @@ Beginner Friendly Topics
 
 - `A beginner's guide to vaex (Mohsen Shamohammadi, @mshamohammadi) <tutorials/vaex_beginners/vaex_tutorial.ipynb>`_
 
+- `A particular artwork with numpy and matplotlib (Rob Bassett, @robbassett) <../A2EGY/A2_Egy.py>`_
+
 Git
 ***
 - `Getting started with version control (git and mercurial) (Manodeep Sinha, @manodeep) <code-review_archive/2017--2018/2018_03_02/README.rst>`_ **BEGINNER FRIENDLY**
