@@ -25,7 +25,7 @@ Beginner Friendly Topics
 
 - `A beginner's guide to vaex (Mohsen Shamohammadi, @mshamohammadi) <tutorials/vaex_beginners/vaex_tutorial.ipynb>`_
 
-- `A particular artwork with numpy and matplotlib (Rob Bassett, @robbassett) </../A2EGY/A2_Egy.py>`_
+- `A particular artwork with numpy and matplotlib (Rob Bassett, @robbassett) <https://github.com/swincas/A2EGY/A2_Egy.py>`_
 
 Git
 ***
