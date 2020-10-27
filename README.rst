@@ -27,7 +27,7 @@ Beginner Friendly Topics
 
 - `A particular artwork with numpy and matplotlib (Rob Bassett, @robbassett) <../A2EGY/A2_Egy.py>`_
 
-- `XGBoost: Predicting the winners of AFL games (Rob Bassett, @robbassett) <tutorials/machine_learning/AFL_prediction/>`_
+- `XGBoost: Predicting the winners of AFL games (Rob Bassett, @robbassett) <tutorials/machine_learning/AFL_prediction/AFL_prediction.ipynb>`_
 
 
 Git
