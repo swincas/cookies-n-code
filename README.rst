@@ -25,7 +25,6 @@ Beginner Friendly Topics
 
 - `A beginner's guide to vaex (Mohsen Shamohammadi, @mshamohammadi) <tutorials/vaex_beginners/vaex_tutorial.ipynb>`_
 
-
 Git
 ***
 - `Getting started with version control (git and mercurial) (Manodeep Sinha, @manodeep) <code-review_archive/2017--2018/2018_03_02/README.rst>`_ **BEGINNER FRIENDLY**
@@ -50,11 +49,6 @@ Python
 
 - `A beginner's guide to vaex (Mohsen Shamohammadi, @mshamohammadi) <tutorials/vaex_beginners/vaex_tutorial.ipynb>`_
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 46ef1792ba4cf409eca3e4bc2d628a8b7e7b9126
-
 - `Making Pretty Matplotlib Plots with plt.rcParams (Adam Batten, @abatten) <tutorials/pretty_matplotlib_plotting/pretty_matplotlib_plotting.ipynb>`_
 
 The Python Visualisation Mega-Month
@@ -64,6 +58,7 @@ The Python Visualisation Mega-Month
 - `Dos and do-nots for plotting in Python (Renée Spiewak, @respiewak) <tutorials/python-vis_all/Dos-n-Donts_Py-Vis.ipynb>`_
 
 - `Passing Matplotlib axes to functions to make easy multi-panel plots (Jacob Seiler, @jacobseiler) <tutorials/python-vis_all/passing_axis.ipynb>`_
+
 
 Interactive Python Plots
 ........................
