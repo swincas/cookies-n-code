@@ -53,6 +53,10 @@ Python
 
 - `Making Pretty Matplotlib Plots with plt.rcParams (Adam Batten, @abatten) <tutorials/pretty_matplotlib_plotting/pretty_matplotlib_plotting.ipynb>`_
 
+- `A particular artwork with numpy and matplotlib (Rob Bassett, @robbassett) <https://github.com/swincas/A2EGY/>`_
+
+- `XGBoost: Predicting the winners of AFL games (Rob Bassett, @robbassett) <tutorials/machine_learning/AFL_prediction/>`_
+
 The Python Visualisation Mega-Month
 ...................................
 - `Interactive Python Plots with Bokeh (Aditya Parthasarathy, @aparthas3112) <tutorials/python-vis_all/GUI_CodeReview>`_
