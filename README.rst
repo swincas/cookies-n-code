@@ -27,6 +27,9 @@ Beginner Friendly Topics
 
 - `A particular artwork with numpy and matplotlib (Rob Bassett, @robbassett) <../A2EGY/A2_Egy.py>`_
 
+- `XGBoost: Predicting the winners of AFL games (Rob Bassett, @robbassett) <tutorials/machine_learning/AFL_prediction/>`_
+
+
 Git
 ***
 - `Getting started with version control (git and mercurial) (Manodeep Sinha, @manodeep) <code-review_archive/2017--2018/2018_03_02/README.rst>`_ **BEGINNER FRIENDLY**
