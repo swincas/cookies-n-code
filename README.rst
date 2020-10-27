@@ -25,8 +25,6 @@ Beginner Friendly Topics
 
 - `A beginner's guide to vaex (Mohsen Shamohammadi, @mshamohammadi) <tutorials/vaex_beginners/vaex_tutorial.ipynb>`_
 
-- `A particular artwork with numpy and matplotlib (Rob Bassett, @robbassett) <../A2EGY/A2_Egy.py>`_
-
 - `XGBoost - Predicting the winners of AFL games (Rob Bassett, @robbassett) <tutorials/machine_learning/AFL_prediction/AFL_prediction.ipynb>`_
 
 
@@ -54,7 +52,6 @@ Python
 
 - `A beginner's guide to vaex (Mohsen Shamohammadi, @mshamohammadi) <tutorials/vaex_beginners/vaex_tutorial.ipynb>`_
 
-- `A particular artwork with numpy and matplotlib (Rob Bassett, @robbassett) <../A2EGY/A2_Egy.py>`_
 <<<<<<< HEAD
 
 =======
@@ -69,8 +66,6 @@ The Python Visualisation Mega-Month
 - `Dos and do-nots for plotting in Python (Renée Spiewak, @respiewak) <tutorials/python-vis_all/Dos-n-Donts_Py-Vis.ipynb>`_
 
 - `Passing Matplotlib axes to functions to make easy multi-panel plots (Jacob Seiler, @jacobseiler) <tutorials/python-vis_all/passing_axis.ipynb>`_
-
-- `A particular artwork with numpy and matplotlib (Rob Bassett, @robbassett) <../A2EGY/A2_Egy.py>`_
 
 Interactive Python Plots
 ........................
