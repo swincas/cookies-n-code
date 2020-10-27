@@ -25,6 +25,8 @@ Beginner Friendly Topics
 
 - `A beginner's guide to vaex (Mohsen Shamohammadi, @mshamohammadi) <tutorials/vaex_beginners/vaex_tutorial.ipynb>`_
 
+- `A particular artwork with numpy and matplotlib (Rob Bassett, @robbassett) <../A2EGY/A2_Egy.py>`_
+
 Git
 ***
 - `Getting started with version control (git and mercurial) (Manodeep Sinha, @manodeep) <code-review_archive/2017--2018/2018_03_02/README.rst>`_ **BEGINNER FRIENDLY**
@@ -49,7 +51,13 @@ Python
 
 - `A beginner's guide to vaex (Mohsen Shamohammadi, @mshamohammadi) <tutorials/vaex_beginners/vaex_tutorial.ipynb>`_
 
+- `A particular artwork with numpy and matplotlib (Rob Bassett, @robbassett) <../A2EGY/A2_Egy.py>`_
+<<<<<<< HEAD
 
+=======
+>>>>>>> 46ef1792ba4cf409eca3e4bc2d628a8b7e7b9126
+
+- `Making Pretty Matplotlib Plots with plt.rcParams (Adam Batten, @abatten) <tutorials/pretty_matplotlib_plotting/pretty_matplotlib_plotting.ipynb>`_
 
 The Python Visualisation Mega-Month
 ...................................
@@ -59,6 +67,7 @@ The Python Visualisation Mega-Month
 
 - `Passing Matplotlib axes to functions to make easy multi-panel plots (Jacob Seiler, @jacobseiler) <tutorials/python-vis_all/passing_axis.ipynb>`_
 
+- `A particular artwork with numpy and matplotlib (Rob Bassett, @robbassett) <../A2EGY/A2_Egy.py>`_
 
 Interactive Python Plots
 ........................
@@ -112,8 +121,12 @@ Shell
 - `Shell environments and Scripting (Leonie Chevalier, @leoniechevalier and Manodeep Sinha, @manodeep) <code-review_archive/2017--2018/2018_04_06/README.rst>`_
 
 - `Introduction to awk (Manodeep Sinha, @manodeep) <code-review_archive/2019_06_21/README.rst>`_
+
 - `Shell Tips and Tricks (Adam Batten, @abatten) <tutorials/shell_tips/shell_tips.txt>`_
 
+- `Version Control Dotfile (Adam Batten, @abatten) <tutorials/shell_tips/VC_dotfiles/README.md>`_
+
+- `Some Useful, Modern Command Line Utilities (Daniel Berke, @DBerke) <tutorials/rust_utilities/rust_utilities.rst>`_
   
 C
 *
@@ -131,6 +144,11 @@ OzStar
 - `Getting Started on OzSTAR (Manodeep Sinha, @manodeep) <code-review_archive/2017--2018/2018_06_08/README.rst>`_
 
 - `Running jupyter notebooks remotely (Wael Farah, @wfarah) <code-review_archive/2017--2018/2018_08_03/README.rst>`_
+
+
+IDES
+****
+- `How and why you should use a debugger in Python (Oliver Coad, @olivercoad) <tutorials/debuggers/README.md>`_
 
 
 
@@ -154,6 +172,7 @@ SSH Keys and Config
 Code and Plot Brags
 ...................
 - `Code and Plot Brags (Many authors - added by Manodeep Sinha, @manodeep) <code-review_archive/2019_02_15/README.rst>`_
+
 
 
 

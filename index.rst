@@ -43,8 +43,6 @@ Code Review: Covered Topics
 
 - `Intro to setting up SSH Keys and SSH config (Adam Batten, @abatten) <code-review_archive/2017--2018/2018_05_11/README.rst>`_
 
-- `Another intro to mpi4py (Jacob Seiler, @jacobseiler) <code-review_archive/2017--2018/2018_05_25/README.rst>`_
-
 - `Demystifying C pointers and function calls (Manodeep Sinha, @manodeep) <code-review_archive/2017--2018/2018_11_02/README.rst>`_
 
 - `Introduction to building a Python package (Ellert van der Velden, @1313e) <https://github.com/1313e/python-package-tutorial>`_
@@ -56,6 +54,8 @@ Code Review: Covered Topics
 - `Introduction to awk (Manodeep Sinha, @manodeep) <code-review_archive/2019_06_21/README.rst>`_
 
 - `Introduction to (Py)Qt5 (Ellert van der Velden, @1313e) <tutorials/intro_to_Qt5/README.rst>`_
+
+- `Making Pretty Matplotlib Plots with plt.rcParams (Adam Batten, @abatten) <tutorials/pretty_matplotlib_plotting/pretty_matplotlib_plotting.ipynb>`_
 
 ############
 Tutorials
@@ -129,6 +129,12 @@ Shell Tips and Tricks
 *********************
 
 - `Shell Tips and Tricks (Adam Batten, @abatten) <tutorials/shell_tips/shell_tips.txt>`_
+
+*******************************************
+Some Modern, Updated Command Line Utilities
+*******************************************
+
+- `Handy CL utilities (Daniel Berke, @DBerke) <tutorials/rust_utilities/rust_utilities.rst>`_
 
 ****************
 Machine Learning
