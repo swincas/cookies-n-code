@@ -142,6 +142,8 @@ Machine Learning
 
 - `Predict the gender of a name using ML (Wael Farah, @wfarah) <tutorials/machine_learning/name_classifier/README.rst>`_
 
+- `XGBoost: Predicting the winners of AFL games (Rob Bassett, @robbassett) <tutorials/machine_learning/AFL_prediction/>`_
+
 ********************************
 Debuggers in Python
 ********************************
