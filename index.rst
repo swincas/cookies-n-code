@@ -142,6 +142,8 @@ Machine Learning
 
 - `Predict the gender of a name using ML (Wael Farah, @wfarah) <tutorials/machine_learning/name_classifier/README.rst>`_
 
+- `XGBoost: Predicting the winners of AFL games (Rob Bassett, @robbassett) <tutorials/machine_learning/AFL_prediction/>`_
+
 ********************************
 Debuggers in Python
 ********************************
@@ -169,6 +171,12 @@ Passing Axis to Combined Figures
 ********************************
 
 - `Passing Matplotlib axes to functions to make easy multi-panel plots (Jacob Seiler, @jacobseiler) <tutorials/python-vis_all/passing_axis.ipynb>`_
+
+***************
+Art with Python
+***************
+
+- `A particular artwork with numpy and matplotlib (Rob Bassett, @robbassett) <https://github.com/swincas/A2EGY/>`_
 
 #######################
 External Web Resources

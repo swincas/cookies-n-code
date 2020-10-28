@@ -25,6 +25,8 @@ Beginner Friendly Topics
 
 - `A beginner's guide to vaex (Mohsen Shamohammadi, @mshamohammadi) <tutorials/vaex_beginners/vaex_tutorial.ipynb>`_
 
+- `A particular artwork with numpy and matplotlib (Rob Bassett, @robbassett) <https://github.com/swincas/A2EGY/>`_
+
 Git
 ***
 - `Getting started with version control (git and mercurial) (Manodeep Sinha, @manodeep) <code-review_archive/2017--2018/2018_03_02/README.rst>`_ **BEGINNER FRIENDLY**
@@ -50,6 +52,10 @@ Python
 - `A beginner's guide to vaex (Mohsen Shamohammadi, @mshamohammadi) <tutorials/vaex_beginners/vaex_tutorial.ipynb>`_
 
 - `Making Pretty Matplotlib Plots with plt.rcParams (Adam Batten, @abatten) <tutorials/pretty_matplotlib_plotting/pretty_matplotlib_plotting.ipynb>`_
+
+- `A particular artwork with numpy and matplotlib (Rob Bassett, @robbassett) <https://github.com/swincas/A2EGY/>`_
+
+- `XGBoost: Predicting the winners of AFL games (Rob Bassett, @robbassett) <tutorials/machine_learning/AFL_prediction/>`_
 
 The Python Visualisation Mega-Month
 ...................................
@@ -106,6 +112,7 @@ Misc. Python Tutorials
 
 - `Predict the gender of a name using ML (Wael Farah, @wfarah) <tutorials/machine_learning/name_classifier/README.rst>`_
 
+- `XGBoost: Predicting the winners of AFL games (Rob Bassett, @robbassett) <tutorials/machine_learning/AFL_prediction/>`_
 
 Shell
 *****
