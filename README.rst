@@ -160,6 +160,8 @@ Misc. Topics
 
 - `Makefiles (Manodeep Sinha, @manodeep) <code-review_archive/2017--2018/2017_03_31/README.rst>`_
 
+- `Scheduling jobs with cron (Oliver Coad, @olivercoad) <tutorials/scheduling/README.md>`_
+
 
 SSH Keys and Config
 ...................
