@@ -1,0 +1,21 @@
+/* 
+This file exists to show how an HTML document can inherit styles from multiple CSS files. In this file, the color of the "tag" class is overridden from what is given in example.css.
+*/
+
+/* Animations */
+
+
+/* Per-element styles */
+
+h1 {
+    font-style: italic;
+}
+
+/* ID-specific styles */
+
+
+/* Class-specific styles */
+
+.tag {
+    color: Blue;
+}
