@@ -114,6 +114,8 @@ Misc. Python Tutorials
 
 - `XGBoost: Predicting the winners of AFL games (Rob Bassett, @robbassett) <tutorials/machine_learning/AFL_prediction/>`_
 
+- `Working with satellite imagery from Digital Earth Australia (Caitlin Adams, @caitlinadams <tutorials/spatial_data/>`_
+
 Shell
 *****
 - `Shell environments and Scripting (Leonie Chevalier, @leoniechevalier and Manodeep Sinha, @manodeep) <code-review_archive/2017--2018/2018_04_06/README.rst>`_
