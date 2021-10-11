@@ -89,7 +89,7 @@ Python MPI
 
 Python Testing and Package Development
 ......................................
-- `Modularising and Packaging Your Code (Adam Batten, @abatten) <tutorials/modularising_and_packaging_code/README.md>`_
+- `Modularising and Packaging Your Code (Adam Batten, @abatten) <tutorials/modularising_and_packaging_code/>`_
 
 - `Introduction to building a Python package (Ellert van der Velden, @1313e) <https://github.com/1313e/python-package-tutorial>`_
 
