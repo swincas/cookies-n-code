@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: utilspack
+Version: 0.0.1
+Summary: A box of stuff
+Home-page: UNKNOWN
+Author: Adam Batten
+Author-email: adamjbatten@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Unix

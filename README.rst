@@ -95,6 +95,8 @@ Python MPI
 
 Python Testing and Package Development
 ......................................
+- `Modularising and Packaging Your Code (Adam Batten, @abatten) <tutorials/modularising_and_packaging_code/>`_
+
 - `Introduction to building a Python package (Ellert van der Velden, @1313e) <https://github.com/1313e/python-package-tutorial>`_
 
 - `Automating Testing With Travis (Jacob Seiler, @jacobseiler) <https://github.com/jacobseiler/testing_tutorial/>`_
@@ -127,9 +129,7 @@ Shell
 - `Version Control Dotfile (Adam Batten, @abatten) <tutorials/shell_tips/VC_dotfiles/README.md>`_
 
 - `Some Useful, Modern Command Line Utilities (Daniel Berke, @DBerke) <tutorials/rust_utilities/rust_utilities.rst>`_
-  
-C
-*
+
 - `Demystifying C pointers and function calls (Manodeep Sinha, @manodeep) <code-review_archive/2017--2018/2018_11_02/README.rst>`_
 
 - `Intel Vtune Visual Profiler (Jacob Seiler, @jacobseiler) <tutorials/vtune_profiling/README.rst>`_
