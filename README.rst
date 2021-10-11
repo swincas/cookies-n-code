@@ -25,6 +25,8 @@ Beginner Friendly Topics
 
 - `A beginner's guide to vaex (Mohsen Shamohammadi, @mshamohammadi) <tutorials/vaex_beginners/vaex_tutorial.ipynb>`_
 
+- `A particular artwork with numpy and matplotlib (Rob Bassett, @robbassett) <https://github.com/swincas/A2EGY/>`_
+
 Git
 ***
 - `Getting started with version control (git and mercurial) (Manodeep Sinha, @manodeep) <code-review_archive/2017--2018/2018_03_02/README.rst>`_ **BEGINNER FRIENDLY**
@@ -50,6 +52,10 @@ Python
 - `A beginner's guide to vaex (Mohsen Shamohammadi, @mshamohammadi) <tutorials/vaex_beginners/vaex_tutorial.ipynb>`_
 
 - `Making Pretty Matplotlib Plots with plt.rcParams (Adam Batten, @abatten) <tutorials/pretty_matplotlib_plotting/pretty_matplotlib_plotting.ipynb>`_
+
+- `A particular artwork with numpy and matplotlib (Rob Bassett, @robbassett) <https://github.com/swincas/A2EGY/>`_
+
+- `XGBoost: Predicting the winners of AFL games (Rob Bassett, @robbassett) <tutorials/machine_learning/AFL_prediction/>`_
 
 The Python Visualisation Mega-Month
 ...................................
@@ -108,6 +114,9 @@ Misc. Python Tutorials
 
 - `Predict the gender of a name using ML (Wael Farah, @wfarah) <tutorials/machine_learning/name_classifier/README.rst>`_
 
+- `XGBoost: Predicting the winners of AFL games (Rob Bassett, @robbassett) <tutorials/machine_learning/AFL_prediction/>`_
+
+- `Working with satellite imagery from Digital Earth Australia (Caitlin Adams, @caitlinadams <tutorials/spatial_data/>`_
 
 Shell
 *****
@@ -119,9 +128,8 @@ Shell
 
 - `Version Control Dotfile (Adam Batten, @abatten) <tutorials/shell_tips/VC_dotfiles/README.md>`_
 
-  
-C
-*
+- `Some Useful, Modern Command Line Utilities (Daniel Berke, @DBerke) <tutorials/rust_utilities/rust_utilities.rst>`_
+
 - `Demystifying C pointers and function calls (Manodeep Sinha, @manodeep) <code-review_archive/2017--2018/2018_11_02/README.rst>`_
 
 - `Intel Vtune Visual Profiler (Jacob Seiler, @jacobseiler) <tutorials/vtune_profiling/README.rst>`_
@@ -153,6 +161,8 @@ Misc. Topics
 - `Understanding how Executables and Packages are Found (Manodeep Sinha, @manodeep) <code-review_archive/2017--2018/2017_10_27/README.rst>`_
 
 - `Makefiles (Manodeep Sinha, @manodeep) <code-review_archive/2017--2018/2017_03_31/README.rst>`_
+
+- `Scheduling jobs with cron (Oliver Coad, @olivercoad) <tutorials/scheduling/README.md>`_
 
 
 SSH Keys and Config
