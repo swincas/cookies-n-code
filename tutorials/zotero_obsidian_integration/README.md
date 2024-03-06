@@ -1,9 +1,8 @@
----
-author: Robert A. Mostoghiu Paun
-tags:
-  - tutorial
----
-# Zotero configuration
+# Zotero-Obsidian Integration
+
+Author: Robert A. Mostoghiu Paun
+
+## Zotero configuration
 1. Download *Zotero* and *Zotero Connector* from [here](https://www.zotero.org/download/). Zotero Connector allows us to add papers from ADS, Arxiv, etc. directly to our Zotero library by simply clicking on a button from the browser.
 2. Install the following addons for Zotero:
 	1.  *Zotfile*, by following the steps described [here](https://zotfile.com/#how-to-install--set-up-zotfile)
@@ -18,7 +17,7 @@ tags:
 
 ![[screenshots/zotero_obsidian_tut11.png]]
 
-# Obsidian configuration
+## Obsidian configuration
 1. Download Obsidian from [here](https://obsidian.md/download). Obsidian stores all your notes in “vaults”, local directories in your computer. Create a new vault.
 2. Create a new folder in your vault (e.g. “<your_vault_name>/templates”) that will store your Zotero template, a file which tells Obsidian how to handle the information scraped from Zotero. In my case, I saved the following template in a file called “zotero_papers_template” and I saved it it the templates folder (i.e. <your_vault_name>/templates/zotero_papers_template) :
 
@@ -186,7 +185,7 @@ Imported on {{importDate | format("YYYY-MM-DD h:mm a")}}
 	
 	![[screenshots/zotero_obsidian_tut8.png]]
 
-# Making it work
+## Making it work
 If Zotero and Obsidian are correctly configured, after the highlighting, adding notes, selecting parts of a pdf, etc. in Zotero we can automatically export that information to an Obsidian note by invoking the Zotero Integration plugin from the Command Palette (i.e. ``CMD + P`` on Mac, ``CTRL + P`` on Windows) and selecting *Zotero Integration: Paper*, i.e. the new Import Formats we created.
 
 ![[screenshots/zotero_obsidian_tut12.png]]
@@ -208,7 +207,7 @@ The template supports the following colors in Zotero:
 
 Feel free to change the template, but I suggest making a backup before you change anything :)
 
-# Extra plugins I recommend
+## Extra plugins I recommend
 These are some of the plugins I use. Maybe you would want to use them too. 
 All of them can be found in the Community Plugins section of the Obsidian settings.
 * *Calendar* + *Periodic Notes*: very useful for creating daily, weekly, and monthly notes firectly by clicking on the calendar. 
