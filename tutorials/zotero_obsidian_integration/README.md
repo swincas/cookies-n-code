@@ -18,7 +18,7 @@ author: Robert A. Mostoghiu Paun
 
 ## Obsidian configuration
 1. Download Obsidian from [here](https://obsidian.md/download). Obsidian stores all your notes in “vaults”, local directories in your computer. Create a new vault.
-2. Create a new folder in your vault (e.g. “<your_vault_name>/templates”) that will store your Zotero template, a file which tells Obsidian how to handle the information scraped from Zotero. In my case, I saved the following template in a file called “zotero_papers_template” and I saved it it the templates folder (i.e. <your_vault_name>/templates/zotero_papers_template) :
+2. Create a new folder in your vault (e.g. “<your_vault_name>/templates”) that will store your Zotero template, a file which tells Obsidian how to handle the information scraped from Zotero. In my case, I saved the following template in a file called “zotero_papers_template” and I saved it it the templates folder (i.e. <your_vault_name>/templates/zotero_papers_template). You can also download the `zotero_papers_template.md` file:
 
 ```
 ---
@@ -125,7 +125,7 @@ Imported on {{importDate | format("YYYY-MM-DD h:mm a")}}
 
 ```
 
-3. In Settings → Appearance scroll all the way down to “CSS snippets” and click on the folder icon to open the folder in which we will add a file telling Obsidian how to handle the colors in the Zotero template. Save the following in a file (e.g. “zotero_obsidian_colors.css“) and move it to that folder:
+3. In Settings → Appearance scroll all the way down to “CSS snippets” and click on the folder icon to open the folder in which we will add a file telling Obsidian how to handle the colors in the Zotero template. Save the following in a file (e.g. “zotero_obsidian_colors.css“) or download the `zotero_obsidian_colors.css` file provided and move it to that folder:
 
 ```
 /* Yellow */
