@@ -1,6 +1,5 @@
 # Zotero-Obsidian Integration
-
-Author: Robert A. Mostoghiu Paun
+author: Robert A. Mostoghiu Paun
 
 ## Zotero configuration
 1. Download *Zotero* and *Zotero Connector* from [here](https://www.zotero.org/download/). Zotero Connector allows us to add papers from ADS, Arxiv, etc. directly to our Zotero library by simply clicking on a button from the browser.
@@ -9,13 +8,13 @@ Author: Robert A. Mostoghiu Paun
 	2. *Better Bibtex*, by following the steps described [here](https://retorque.re/zotero-better-bibtex/installation/index.html)
 3. Most of the configuration for Zotero and Zotfile can be found  in the following [link](https://habr.com/en/articles/443798/). There are, however, some settings I changed because of personal preference. In particular, I prefer to organise my library by (main) author and then, for the same author, by year, and prefer some different rules for renaming pdfs once added to the library. Feel free to experiment with the syntax.
 
-![[screenshots/zotero_obsidian_tut9.png]]
+![Zotero settings: Zotfile preferences](screenshots/zotero_obsidian_tut1.png)
 
-![[screenshots/zotero_obsidian_tut10.png]]
+![Zotero settings: PDF renaming rules](screenshots/zotero_obsidian_tut2.png)
 
 4. For Better BibTex, I set it so that papers added to my library get automatically a citation key following a certain syntax (feel free to change it). When Obsidian is called to read the Zotero information, the Obsidian note is renamed to the citation key assigned by Better BibTex. **Note** the settings for Better Bibtex are in Zotero Settings.
 
-![[screenshots/zotero_obsidian_tut11.png]]
+![Zotero settings: Better Bibtex citation key format](screenshots/zotero_obsidian_tut3.png)
 
 ## Obsidian configuration
 1. Download Obsidian from [here](https://obsidian.md/download). Obsidian stores all your notes in “vaults”, local directories in your computer. Create a new vault.
@@ -155,48 +154,48 @@ Imported on {{importDate | format("YYYY-MM-DD h:mm a")}}
 }
 ```
 
-![[screenshots/zotero_obsidian_tut5.png]]
+![Obsidian settings: CSS snippets](screenshots/zotero_obsidian_tut4.png)
 
 **Note**: once copied to the folder you can press the refresh button and it should appear in Obsidian as a toggeable snippet. Don’t forget to activate the snippet!
 
-5. Install the plugin *Zotero Integration* (Settings → Community plugins \[Browse])
+4. Install the plugin *Zotero Integration* (Settings → Community plugins \[Browse])
 
-![[screenshots/zotero_obsidian_tut1.png]]
+![Obsidian settings: community plugins](screenshots/zotero_obsidian_tut5.png)
 
-4. Set the following in the settings of *Zotero Integration* (Settings → Zotero Integration):
+5. Set the following in the settings of *Zotero Integration* (Settings → Zotero Integration):
 
 	1.  Install the PDF utility 
 	
-	![[screenshots/zotero_obsidian_tut2.png]]
+	![Obsidian settings: installing PDF utility](screenshots/zotero_obsidian_tut6.png)
 	
 	2. Set Database to “Zotero”
 	
-	![[screenshots/zotero_obsidian_tut3.png]]
+	![Obsidian settings: set database to "Zotero"](screenshots/zotero_obsidian_tut7.png)
 	
 	3. Create a new type of Citation Format by clicking on “Add Citation Format“, call it whatever you want (e.g. “Citation”) and set it as a “Formatted Citation” with the style you prefer. In my case I chose ApJ. Whichever style you pick you will have to have support for such style in Zotero too. Citation styles can be added to Zotero by following [this link](https://www.zotero.org/support/styles) 
 	
-	![[screenshots/zotero_obsidian_tut6.png]]
+	![Obsidian settings: create new citation format](screenshots/zotero_obsidian_tut8.png)
 	
 	4. Create a new Import Format by clicking on “Add Import Format”. Give it a name (e.g “Paper”), and select the directory in which you want to save new notes imported from Zotero. In my case I wanted to store them in a separate folder in my vault called “papers”, and I wanted to automatically name such notes by the citation key they have assigned, hence I picked “papers/{{citekey}}.md“). I personally also want the images obtained from Zotero notes to be stored in separate folder so it does not clutter my papers folders, thus I picked “images/{{citekey}}/” as the path. **Note**: the folders “papers” and “images” have to be created in the vault first.
 	
-	![[screenshots/zotero_obsidian_tut7.png]]
+	![Obsidian settings: note import format](screenshots/zotero_obsidian_tut9.png)
 	
 	5. Select the template file we created before to tell Obsidian it should use that format when pulling information from Zotero. Finally, choose the bibliography style for this format (I choose the same style as before, ApJ).
 	
-	![[screenshots/zotero_obsidian_tut8.png]]
+	![Obsidian settings: selecting template file](screenshots/zotero_obsidian_tut10.png)
 
 ## Making it work
 If Zotero and Obsidian are correctly configured, after the highlighting, adding notes, selecting parts of a pdf, etc. in Zotero we can automatically export that information to an Obsidian note by invoking the Zotero Integration plugin from the Command Palette (i.e. ``CMD + P`` on Mac, ``CTRL + P`` on Windows) and selecting *Zotero Integration: Paper*, i.e. the new Import Formats we created.
 
-![[screenshots/zotero_obsidian_tut12.png]]
+![Obsidian settings: testing Zotero integration](screenshots/zotero_obsidian_tut11.png)
 
 A new prompt will appear, in which we will type either the name of the paper we want to import or its citation key (the citation key can be checked in the metadata of the paper in Zotero)
 
-![[screenshots/zotero_obsidian_tut13.png]]
+![Zotero integration: search your papers](screenshots/zotero_obsidian_tut12.png)
 
 If the configuration was successful, a new note named after the paper’s citation key will appear in the directory we picked as the default location for the Obsidian notes created from Zotero papers.
 
-![[screenshots/zotero_obsidian_tut14.png]]
+![Obsidian: how your note should look!](screenshots/zotero_obsidian_tut13.png)
 
 The template supports the following colors in Zotero:
 1. Red → Negative
