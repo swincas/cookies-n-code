@@ -98,9 +98,9 @@ S2PLOT -- 3D interactive Visualization tool
 
 - `GEM by Chris Fluke, @cfluke on 26/04/2017 <tutorials/s2plot/README.rst>`_
 
-*********************************************************************************************
+*************************************************************************************************
 `Line_Profiler` - A Python package showing how long each line of a Python function takes to run
-*********************************************************************************************
+*************************************************************************************************
 
 - `Jupyter Notebook with with line_profiler (Jacob Seiler, @jacobseiler) <code-review_archive/2017--2018/2017_12_07/line_profiler.py.ipynb>`_
 
@@ -150,13 +150,32 @@ Debuggers in Python
 
 - `How and why you should use a debugger in Python (Oliver Coad, @olivercoad) <tutorials/debuggers/README.md>`_
 
+
+*********************************
+Upgrading Your Research Workflow
+*********************************
+
+- `Zoerto-Obsidian Integration (Robert A. Mostoghiu Paun, @robmost) <tutorials/zotero_obsidian_integration/README.md>`_
+
+*************************
+Professional Development
+*************************
+
+- `Postdoc job application guide (Chris Blake) <tutorials/postdoc_job_applications/README.md>`_
+
+***********************
+Introduction to Python
+***********************
+
+- `Introduction to Python (Tyson Dial, @tdial2000) <tutorials/python_intro/README.md>`_
+
 ###################################
 The Python Visualization Mega-Month
 ###################################
 
-***************
+********************************
 Interactive Plotting with Bokeh
-***************
+********************************
 
 - `Interactive Python Plots with Bokeh (Aditya Parthasarathy, @aparthas3112) <tutorials/python-vis_all/GUI_CodeReview>`_
 

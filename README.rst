@@ -27,6 +27,8 @@ Beginner Friendly Topics
 
 - `A particular artwork with numpy and matplotlib (Rob Bassett, @robbassett) <https://github.com/swincas/A2EGY/>`_
 
+- `Zoerto-Obsidian Integration (Robert A. Mostoghiu Paun, @robmost) <tutorials/zotero_obsidian_integration/README.md>`_
+
 Git
 ***
 - `Getting started with version control (git and mercurial) (Manodeep Sinha, @manodeep) <code-review_archive/2017--2018/2018_03_02/README.rst>`_ **BEGINNER FRIENDLY**
@@ -56,6 +58,8 @@ Python
 - `A particular artwork with numpy and matplotlib (Rob Bassett, @robbassett) <https://github.com/swincas/A2EGY/>`_
 
 - `XGBoost: Predicting the winners of AFL games (Rob Bassett, @robbassett) <tutorials/machine_learning/AFL_prediction/>`_
+
+- `Introduction to Python (Tyson Dial, @tdial2000) <tutorials/python_intro/README.md>`_
 
 The Python Visualisation Mega-Month
 ...................................
@@ -164,6 +168,8 @@ Misc. Topics
 
 - `Scheduling jobs with cron (Oliver Coad, @olivercoad) <tutorials/scheduling/README.md>`_
 
+- `Postdoc job application guide (Chris Blake) <tutorials/postdoc_job_applications/README.md>`_
+
 
 SSH Keys and Config
 ...................
@@ -174,10 +180,3 @@ SSH Keys and Config
 Code and Plot Brags
 ...................
 - `Code and Plot Brags (Many authors - added by Manodeep Sinha, @manodeep) <code-review_archive/2019_02_15/README.rst>`_
-
-
-
-
-
-
-
