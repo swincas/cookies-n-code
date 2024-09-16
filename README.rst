@@ -76,6 +76,8 @@ Interactive Python Plots
 
 - `Making interactive plots with Bokeh + Custom Colormaps(Robert Dzudzar, @rdzudzar) <code-review_archive/2017--2018/2017_11_24/colourmaps_and_interactive_plots.ipynb>`_
 
+- `Interactive matplotlib with Jupyter notebooks (Jonah Gannon)   <tutorials/Spectrum_redshifter/Build_Your_Own.ipynb>`_
+
 Profiling and Speeding Up Python Code
 .....................................
 
