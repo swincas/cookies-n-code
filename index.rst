@@ -191,6 +191,12 @@ Passing Axis to Combined Figures
 
 - `Passing Matplotlib axes to functions to make easy multi-panel plots (Jacob Seiler, @jacobseiler) <tutorials/python-vis_all/passing_axis.ipynb>`_
 
+**********************
+Interactive matplotlib 
+**********************
+
+- `Interactive matplotlib with Jupyter notebooks (Jonah Gannon)   <tutorials/Spectrum_redshifter/Build_Your_Own.ipynb>`_
+
 ***************
 Art with Python
 ***************
