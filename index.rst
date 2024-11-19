@@ -72,6 +72,7 @@ git - A Version Control Software to Easily Track Changes to Code and Papers
 *****************************************************************************
 
 - `Intro to git <tutorials/intro_to_git/README.rst>`_
+- `Version control with Git (Rory Elliot) <tutorials/intro_to_git_2024/README.md>`_
 
 *****************************************************
 Why/How/When to Release (Research) Software Publicly
@@ -144,6 +145,8 @@ Machine Learning
 
 - `XGBoost: Predicting the winners of AFL games (Rob Bassett, @robbassett) <tutorials/machine_learning/AFL_prediction/>`_
 
+- `Exploring the relationships between variables using Gaussian Processes (Agne Semenaite) <tutorials/gaussian_processes/README.md>`_
+
 ********************************
 Debuggers in Python
 ********************************
@@ -157,17 +160,39 @@ Upgrading Your Research Workflow
 
 - `Zoerto-Obsidian Integration (Robert A. Mostoghiu Paun, @robmost) <tutorials/zotero_obsidian_integration/README.md>`_
 
+- `Running large language models on OzSTAR (Colin Jacobs) <tutorials/LLMs_on_OzSTAR/README.md>`_
+
 *************************
 Professional Development
 *************************
 
 - `Postdoc job application guide (Chris Blake) <tutorials/postdoc_job_applications/README.md>`_
 
+**********************
+Spectral Cube Analysis
+**********************
+
+- `KCWI spectral cube analysis with QFitsView (Lydia Haacke) <tutorials/spectral_cubes/README.md>`_
+
 ***********************
 Introduction to Python
 ***********************
 
 - `Introduction to Python (Tyson Dial, @tdial2000) <tutorials/python_intro/README.md>`_
+
+- `Python classes (Tyson Dial, @tdial2000) <tutorials/python_classes/README.md>`_
+
+************
+SED Fitting
+************
+
+- `Introduction to SED Fitting with Bagpipes (Lena Pless) <tutorials/SED_fitting_with_Bagpipes/README.md>`_
+
+**********************
+Graph Neural Networks
+**********************
+
+- `Graph Neural Networks using Pytorch (Shreejit Jadhav) <tutorials/GraphNeuralNetwork/README.md>`_
 
 ###################################
 The Python Visualization Mega-Month
@@ -196,6 +221,7 @@ Interactive matplotlib
 **********************
 
 - `Interactive matplotlib with Jupyter notebooks (Jonah Gannon)   <tutorials/Spectrum_redshifter/Build_Your_Own.ipynb>`_
+- `Interactive plots and GUI's with matplotlib (Tyson Dial, @tdial2000) <tutorials/interactive_matplotlib_TDial>`_
 
 ***************
 Art with Python

@@ -35,6 +35,8 @@ Git
 
 - `Intro to git <tutorials/intro_to_git/README.rst>`_
 
+- `Version control with Git (Rory Elliot) <tutorials/intro_to_git_2024/README.md>`_
+
 - `Creating and hosting your website with github (Adam Batten, @abatten) <tutorials/github_websites/README.rst>`_
   
 Python
@@ -61,6 +63,16 @@ Python
 
 - `Introduction to Python (Tyson Dial, @tdial2000) <tutorials/python_intro/README.md>`_
 
+- `Python classes (Tyson Dial, @tdial2000) <tutorials/python_classes/README.md>`_
+
+- `Introduction to SED Fitting with Bagpipes (Lena Pless) <tutorials/SED_fitting_with_Bagpipes/README.md>`_
+
+- `Exploring the relationships between variables using Gaussian Processes (Agne Semenaite) <tutorials/gaussian_processes/README.md>`_
+
+- `Graph Neural Networks using Pytorch (Shreejit Jadhav) <tutorials/GraphNeuralNetwork/README.md>`_
+
+- `KCWI spectral cube analysis with QFitsView (Lydia Haacke) <tutorials/spectral_cubes/README.md>`_
+
 The Python Visualisation Mega-Month
 ...................................
 - `Interactive Python Plots with Bokeh (Aditya Parthasarathy, @aparthas3112) <tutorials/python-vis_all/GUI_CodeReview>`_
@@ -69,7 +81,6 @@ The Python Visualisation Mega-Month
 
 - `Passing Matplotlib axes to functions to make easy multi-panel plots (Jacob Seiler, @jacobseiler) <tutorials/python-vis_all/passing_axis.ipynb>`_
 
-
 Interactive Python Plots
 ........................
 - `Interacting with points in a python plot (Sabine Bellstedt, @SabineBellstedt) <code-review_archive/2017--2018/2017_09_01/README.rst>`_
@@ -77,6 +88,8 @@ Interactive Python Plots
 - `Making interactive plots with Bokeh + Custom Colormaps(Robert Dzudzar, @rdzudzar) <code-review_archive/2017--2018/2017_11_24/colourmaps_and_interactive_plots.ipynb>`_
 
 - `Interactive matplotlib with Jupyter notebooks (Jonah Gannon)   <tutorials/Spectrum_redshifter/Build_Your_Own.ipynb>`_
+
+- `Interactive plots and GUI's with matplotlib (Tyson Dial, @tdial2000) <tutorials/interactive_matplotlib_TDial>`_
 
 Profiling and Speeding Up Python Code
 .....................................
@@ -150,6 +163,8 @@ OzStar
 - `Getting Started on OzSTAR (Manodeep Sinha, @manodeep) <code-review_archive/2017--2018/2018_06_08/README.rst>`_
 
 - `Running jupyter notebooks remotely (Wael Farah, @wfarah) <code-review_archive/2017--2018/2018_08_03/README.rst>`_
+
+- `Running large language models on OzSTAR (Colin Jacobs) <tutorials/LLMs_on_OzSTAR/README.md>`_
 
 
 IDES
